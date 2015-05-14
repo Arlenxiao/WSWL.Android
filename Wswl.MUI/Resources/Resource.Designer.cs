@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("WSWL.Android.Resource", IsApplication=true)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("Wswl.MUI.Resource", IsApplication=true)]
 
-namespace WSWL.Android
+namespace Wswl.MUI
 {
 	
 	
@@ -45,7 +45,13 @@ namespace WSWL.Android
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int Icon = 2130837504;
+			public const int bg = 2130837504;
+			
+			// aapt resource value: 0x7f020001
+			public const int Icon = 2130837505;
+			
+			// aapt resource value: 0x7f020002
+			public const int logo = 2130837506;
 			
 			static Drawable()
 			{
@@ -60,14 +66,35 @@ namespace WSWL.Android
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050002
-			public const int MyButton = 2131034114;
+			// aapt resource value: 0x7f060009
+			public const int MyButton = 2131099657;
 			
-			// aapt resource value: 0x7f050001
-			public const int imageView1 = 2131034113;
+			// aapt resource value: 0x7f060008
+			public const int btn_link = 2131099656;
 			
-			// aapt resource value: 0x7f050000
-			public const int linearLayout1 = 2131034112;
+			// aapt resource value: 0x7f060004
+			public const int btn_login = 2131099652;
+			
+			// aapt resource value: 0x7f060006
+			public const int btn_register = 2131099654;
+			
+			// aapt resource value: 0x7f060001
+			public const int img_logo = 2131099649;
+			
+			// aapt resource value: 0x7f060000
+			public const int linearLayout1 = 2131099648;
+			
+			// aapt resource value: 0x7f060005
+			public const int linearLayout2 = 2131099653;
+			
+			// aapt resource value: 0x7f060007
+			public const int linearLayout3 = 2131099655;
+			
+			// aapt resource value: 0x7f060003
+			public const int txt_password = 2131099651;
+			
+			// aapt resource value: 0x7f060002
+			public const int txt_userName = 2131099650;
 			
 			static Id()
 			{
@@ -87,6 +114,9 @@ namespace WSWL.Android
 			
 			// aapt resource value: 0x7f030001
 			public const int Main = 2130903041;
+			
+			// aapt resource value: 0x7f030002
+			public const int Register = 2130903042;
 			
 			static Layout()
 			{
@@ -113,6 +143,22 @@ namespace WSWL.Android
 			}
 			
 			private String()
+			{
+			}
+		}
+		
+		public partial class Style
+		{
+			
+			// aapt resource value: 0x7f050000
+			public const int WswlAppTheme = 2131034112;
+			
+			static Style()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Style()
 			{
 			}
 		}

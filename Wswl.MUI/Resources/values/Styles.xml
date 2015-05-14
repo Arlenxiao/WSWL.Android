@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <!--样式资源-->
+  
+  <!--无声物联主题资源-->
+  <style name="WswlAppTheme" parent="@android:style/Theme.NoTitleBar">
+    <item name="android:windowBackground">@drawable/bg</item>
+  </style>
+  
+</resources>
