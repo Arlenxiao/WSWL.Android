@@ -25,7 +25,7 @@ namespace Wswl.MUI
         /// <summary>初始化选项卡</summary>
         private void InitTab()
         {
-            CreateTab(typeof(HomeActivity), "主页", "主页", Resource.Drawable.icon_home_white);
+            CreateTab(typeof(HomeActivity), "主页", "主页", Resource.Drawable.tab_icon_home);
             CreateTab(typeof(NewsActivity), "信息", "信息", Resource.Drawable.icon_news_white);
             CreateTab(typeof(DevicesActivity), "设备", "设备", Resource.Drawable.icon_devicesl_white);
             CreateTab(typeof(ManagesActivity), "更多", "更多", Resource.Drawable.icon_more_white);
@@ -43,8 +43,16 @@ namespace Wswl.MUI
             intent.AddFlags(ActivityFlags.NewTask);
 
             var spec = TabHost.NewTabSpec(tag);
-            var drawableIcon = Resources.GetDrawable(drawableId);
-            spec.SetIndicator(label, drawableIcon);
+
+            //默认
+            //var drawableIcon = Resources.GetDrawable(drawableId);
+            //spec.SetIndicator(label, drawableIcon);
+
+            var view = LayoutInflater.Inflate(Resource.Layout.TabStyle, null);
+            view.FindViewById<ImageView>(Resource.Id.tabIcon).SetImageResource(drawableId);
+            view.FindViewById<TextView>(Resource.Id.tabText).Text = label;
+
+            spec.SetIndicator(view);
             spec.SetContent(intent);
 
             TabHost.AddTab(spec);

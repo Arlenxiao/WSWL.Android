@@ -21,9 +21,7 @@ namespace Wswl.MUI
 
             // Create your application here
 
-
-            var textview = new TextView(this) {Text = "This is the Home tab"};
-            SetContentView(textview);
+            SetContentView(Resource.Layout.Home);
         }
     }
 }

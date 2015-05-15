@@ -65,6 +65,21 @@ namespace Wswl.MUI
 			// aapt resource value: 0x7f020006
 			public const int logo = 2130837510;
 			
+			// aapt resource value: 0x7f020007
+			public const int selectedTab = 2130837511;
+			
+			// aapt resource value: 0x7f020008
+			public const int tab_bg = 2130837512;
+			
+			// aapt resource value: 0x7f020009
+			public const int tab_icon_home = 2130837513;
+			
+			// aapt resource value: 0x7f02000a
+			public const int tab_state = 2130837514;
+			
+			// aapt resource value: 0x7f02000b
+			public const int unselectedTab = 2130837515;
+			
 			static Drawable()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -84,50 +99,65 @@ namespace Wswl.MUI
 			// aapt resource value: 0x7f060000
 			public const int app_message_image = 2131099648;
 			
-			// aapt resource value: 0x7f06000a
-			public const int btn_login_link = 2131099658;
-			
-			// aapt resource value: 0x7f060006
-			public const int btn_login_login = 2131099654;
+			// aapt resource value: 0x7f06000c
+			public const int btn_login_link = 2131099660;
 			
 			// aapt resource value: 0x7f060008
-			public const int btn_login_register = 2131099656;
+			public const int btn_login_login = 2131099656;
 			
-			// aapt resource value: 0x7f060010
-			public const int btn_reg_back = 2131099664;
+			// aapt resource value: 0x7f06000a
+			public const int btn_login_register = 2131099658;
 			
-			// aapt resource value: 0x7f06000f
-			public const int btn_reg_register = 2131099663;
+			// aapt resource value: 0x7f060012
+			public const int btn_reg_back = 2131099666;
 			
-			// aapt resource value: 0x7f060003
-			public const int img_login_logo = 2131099651;
-			
-			// aapt resource value: 0x7f06000b
-			public const int lbl_reg_title = 2131099659;
+			// aapt resource value: 0x7f060011
+			public const int btn_reg_register = 2131099665;
 			
 			// aapt resource value: 0x7f060002
-			public const int linearLayout1 = 2131099650;
-			
-			// aapt resource value: 0x7f060007
-			public const int linearLayout2 = 2131099655;
-			
-			// aapt resource value: 0x7f060009
-			public const int linearLayout3 = 2131099657;
+			public const int imageView1 = 2131099650;
 			
 			// aapt resource value: 0x7f060005
-			public const int txt_login_password = 2131099653;
-			
-			// aapt resource value: 0x7f060004
-			public const int txt_login_userName = 2131099652;
-			
-			// aapt resource value: 0x7f06000e
-			public const int txt_reg_confirmPassword = 2131099662;
+			public const int img_login_logo = 2131099653;
 			
 			// aapt resource value: 0x7f06000d
-			public const int txt_reg_password = 2131099661;
+			public const int lbl_reg_title = 2131099661;
 			
-			// aapt resource value: 0x7f06000c
-			public const int txt_reg_userName = 2131099660;
+			// aapt resource value: 0x7f060004
+			public const int linearLayout1 = 2131099652;
+			
+			// aapt resource value: 0x7f060009
+			public const int linearLayout2 = 2131099657;
+			
+			// aapt resource value: 0x7f06000b
+			public const int linearLayout3 = 2131099659;
+			
+			// aapt resource value: 0x7f060014
+			public const int tabIcon = 2131099668;
+			
+			// aapt resource value: 0x7f060013
+			public const int tabLayout = 2131099667;
+			
+			// aapt resource value: 0x7f060015
+			public const int tabText = 2131099669;
+			
+			// aapt resource value: 0x7f060003
+			public const int textView1 = 2131099651;
+			
+			// aapt resource value: 0x7f060007
+			public const int txt_login_password = 2131099655;
+			
+			// aapt resource value: 0x7f060006
+			public const int txt_login_userName = 2131099654;
+			
+			// aapt resource value: 0x7f060010
+			public const int txt_reg_confirmPassword = 2131099664;
+			
+			// aapt resource value: 0x7f06000f
+			public const int txt_reg_password = 2131099663;
+			
+			// aapt resource value: 0x7f06000e
+			public const int txt_reg_userName = 2131099662;
 			
 			static Id()
 			{
@@ -146,13 +176,19 @@ namespace Wswl.MUI
 			public const int app_message = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int Login = 2130903041;
+			public const int Home = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int Main = 2130903042;
+			public const int Login = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int Register = 2130903043;
+			public const int Main = 2130903043;
+			
+			// aapt resource value: 0x7f030004
+			public const int Register = 2130903044;
+			
+			// aapt resource value: 0x7f030005
+			public const int TabStyle = 2130903045;
 			
 			static Layout()
 			{

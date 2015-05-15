@@ -84,6 +84,12 @@
     <AndroidResource Include="Resources\layout\app_message.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\Home.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\TabStyle.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml" />
@@ -103,6 +109,11 @@
     <AndroidResource Include="Resources\drawable\icon_home_white.png" />
     <AndroidResource Include="Resources\drawable\icon_more_white.png" />
     <AndroidResource Include="Resources\drawable\icon_news_white.png" />
+    <AndroidResource Include="Resources\drawable\tab_bg.png" />
+    <AndroidResource Include="Resources\drawable\tab_icon_home.xml" />
+    <AndroidResource Include="Resources\drawable\tab_state.xml" />
+    <AndroidResource Include="Resources\drawable\selectedTab.png" />
+    <AndroidResource Include="Resources\drawable\unselectedTab.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
