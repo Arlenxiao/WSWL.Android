@@ -22,7 +22,7 @@ namespace Wswl.MUI
             // Create your application here
 
             SetContentView(Resource.Layout.Login);
-           
+
             //初始化加载
             InitEvent();
         }
@@ -31,28 +31,22 @@ namespace Wswl.MUI
         private void InitEvent()
         {
             //登录
-            var login = FindViewById<Button>(Resource.Id.btn_login);
-            login.Click += (s, e) => {StartActivity(typeof(MainActivity)); };
+            var login = FindViewById<Button>(Resource.Id.btn_login_login);
+            login.Click += (s, e) => { StartActivity(typeof(MainActivity)); };
 
             //注册
-            var register = FindViewById<Button>(Resource.Id.btn_register);
-            register.Click += (s, e) => { };
+            var register = FindViewById<Button>(Resource.Id.btn_login_register);
+            register.Click += (s, e) => { StartActivity(typeof(RegisterActivity)); };
 
             //无声物联连接
-            var link = FindViewById<Button>(Resource.Id.btn_link);
+            var link = FindViewById<Button>(Resource.Id.btn_login_link);
             link.Click += (s, e) =>
             {
-                //var uri = Android.Net.Uri.Parse("http://www.peacemoon.cn/");
-                //var intent = new Intent(Intent.ActionDial, uri);
-                //StartActivity(intent);
-
                 Intent intent = new Intent();
                 intent.SetAction("android.intent.action.VIEW");
-                var content_url = Android.Net.Uri.Parse("http://www.peacemoon.cn/");
-                intent.SetData(content_url);
+                var contentUrl = Android.Net.Uri.Parse("http://www.peacemoon.cn/");
+                intent.SetData(contentUrl);
                 StartActivity(intent);
-
-
             };
         }
     }
