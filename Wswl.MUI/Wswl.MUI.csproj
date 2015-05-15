@@ -61,8 +61,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DevicesActivity.cs" />
+    <Compile Include="HomeActivity.cs" />
     <Compile Include="LoginActivity.cs" />
     <Compile Include="MainActivity.cs" />
+    <Compile Include="ManagesActivity.cs" />
+    <Compile Include="NewsActivity.cs" />
     <Compile Include="RegisterActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -95,6 +99,10 @@
     <AndroidResource Include="Resources\values\Styles.xml" />
     <AndroidResource Include="Resources\drawable\bg.png" />
     <AndroidResource Include="Resources\drawable\logo.png" />
+    <AndroidResource Include="Resources\drawable\icon_devicesl_white.png" />
+    <AndroidResource Include="Resources\drawable\icon_home_white.png" />
+    <AndroidResource Include="Resources\drawable\icon_more_white.png" />
+    <AndroidResource Include="Resources\drawable\icon_news_white.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -51,7 +51,19 @@ namespace Wswl.MUI
 			public const int Icon = 2130837505;
 			
 			// aapt resource value: 0x7f020002
-			public const int logo = 2130837506;
+			public const int icon_devicesl_white = 2130837506;
+			
+			// aapt resource value: 0x7f020003
+			public const int icon_home_white = 2130837507;
+			
+			// aapt resource value: 0x7f020004
+			public const int icon_more_white = 2130837508;
+			
+			// aapt resource value: 0x7f020005
+			public const int icon_news_white = 2130837509;
+			
+			// aapt resource value: 0x7f020006
+			public const int logo = 2130837510;
 			
 			static Drawable()
 			{
@@ -65,9 +77,6 @@ namespace Wswl.MUI
 		
 		public partial class Id
 		{
-			
-			// aapt resource value: 0x7f06000b
-			public const int MyButton = 2131099659;
 			
 			// aapt resource value: 0x7f060001
 			public const int app_message_content = 2131099649;
@@ -84,17 +93,17 @@ namespace Wswl.MUI
 			// aapt resource value: 0x7f060008
 			public const int btn_login_register = 2131099656;
 			
-			// aapt resource value: 0x7f060011
-			public const int btn_reg_back = 2131099665;
-			
 			// aapt resource value: 0x7f060010
-			public const int btn_reg_register = 2131099664;
+			public const int btn_reg_back = 2131099664;
+			
+			// aapt resource value: 0x7f06000f
+			public const int btn_reg_register = 2131099663;
 			
 			// aapt resource value: 0x7f060003
 			public const int img_login_logo = 2131099651;
 			
-			// aapt resource value: 0x7f06000c
-			public const int lbl_reg_title = 2131099660;
+			// aapt resource value: 0x7f06000b
+			public const int lbl_reg_title = 2131099659;
 			
 			// aapt resource value: 0x7f060002
 			public const int linearLayout1 = 2131099650;
@@ -111,14 +120,14 @@ namespace Wswl.MUI
 			// aapt resource value: 0x7f060004
 			public const int txt_login_userName = 2131099652;
 			
-			// aapt resource value: 0x7f06000f
-			public const int txt_reg_confirmPassword = 2131099663;
-			
 			// aapt resource value: 0x7f06000e
-			public const int txt_reg_password = 2131099662;
+			public const int txt_reg_confirmPassword = 2131099662;
 			
 			// aapt resource value: 0x7f06000d
-			public const int txt_reg_userName = 2131099661;
+			public const int txt_reg_password = 2131099661;
+			
+			// aapt resource value: 0x7f06000c
+			public const int txt_reg_userName = 2131099660;
 			
 			static Id()
 			{
