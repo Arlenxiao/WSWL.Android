@@ -213,47 +213,59 @@ namespace Wswl.MUI
 			// aapt resource value: 0x7f060032
 			public const int btn_login_register = 2131099698;
 			
-			// aapt resource value: 0x7f06004f
-			public const int btn_reg_back = 2131099727;
+			// aapt resource value: 0x7f060053
+			public const int btn_reg_back = 2131099731;
 			
-			// aapt resource value: 0x7f06004e
-			public const int btn_reg_register = 2131099726;
+			// aapt resource value: 0x7f060052
+			public const int btn_reg_register = 2131099730;
 			
-			// aapt resource value: 0x7f060039
-			public const int button1 = 2131099705;
+			// aapt resource value: 0x7f06004c
+			public const int button10_devices = 2131099724;
 			
-			// aapt resource value: 0x7f060048
-			public const int button10 = 2131099720;
+			// aapt resource value: 0x7f06004d
+			public const int button11_devices = 2131099725;
 			
-			// aapt resource value: 0x7f060049
-			public const int button11 = 2131099721;
-			
-			// aapt resource value: 0x7f060047
-			public const int button12 = 2131099719;
-			
-			// aapt resource value: 0x7f06003a
-			public const int button2 = 2131099706;
-			
-			// aapt resource value: 0x7f06003b
-			public const int button3 = 2131099707;
-			
-			// aapt resource value: 0x7f06003c
-			public const int button4 = 2131099708;
+			// aapt resource value: 0x7f06004b
+			public const int button12_devices = 2131099723;
 			
 			// aapt resource value: 0x7f060042
-			public const int button5 = 2131099714;
+			public const int button1_devices = 2131099714;
+			
+			// aapt resource value: 0x7f060039
+			public const int button1_manages = 2131099705;
 			
 			// aapt resource value: 0x7f060043
-			public const int button6 = 2131099715;
+			public const int button2_devices = 2131099715;
+			
+			// aapt resource value: 0x7f06003a
+			public const int button2_manages = 2131099706;
 			
 			// aapt resource value: 0x7f060044
-			public const int button7 = 2131099716;
+			public const int button3_devices = 2131099716;
+			
+			// aapt resource value: 0x7f06003b
+			public const int button3_manages = 2131099707;
 			
 			// aapt resource value: 0x7f060045
-			public const int button8 = 2131099717;
+			public const int button4_devices = 2131099717;
+			
+			// aapt resource value: 0x7f06003c
+			public const int button4_manages = 2131099708;
 			
 			// aapt resource value: 0x7f060046
-			public const int button9 = 2131099718;
+			public const int button5_devices = 2131099718;
+			
+			// aapt resource value: 0x7f060047
+			public const int button6_devices = 2131099719;
+			
+			// aapt resource value: 0x7f060048
+			public const int button7_devices = 2131099720;
+			
+			// aapt resource value: 0x7f060049
+			public const int button8_devices = 2131099721;
+			
+			// aapt resource value: 0x7f06004a
+			public const int button9_devices = 2131099722;
 			
 			// aapt resource value: 0x7f060007
 			public const int deveces_content = 2131099655;
@@ -321,8 +333,8 @@ namespace Wswl.MUI
 			// aapt resource value: 0x7f06003e
 			public const int lbl_news_title = 2131099710;
 			
-			// aapt resource value: 0x7f06004a
-			public const int lbl_reg_title = 2131099722;
+			// aapt resource value: 0x7f06004e
+			public const int lbl_reg_title = 2131099726;
 			
 			// aapt resource value: 0x7f06001a
 			public const int linearLayout1 = 2131099674;
@@ -366,14 +378,14 @@ namespace Wswl.MUI
 			// aapt resource value: 0x7f060038
 			public const int sv_manages = 2131099704;
 			
-			// aapt resource value: 0x7f060051
-			public const int tabIcon = 2131099729;
+			// aapt resource value: 0x7f060055
+			public const int tabIcon = 2131099733;
 			
-			// aapt resource value: 0x7f060050
-			public const int tabLayout = 2131099728;
+			// aapt resource value: 0x7f060054
+			public const int tabLayout = 2131099732;
 			
-			// aapt resource value: 0x7f060052
-			public const int tabText = 2131099730;
+			// aapt resource value: 0x7f060056
+			public const int tabText = 2131099734;
 			
 			// aapt resource value: 0x7f060030
 			public const int txt_login_password = 2131099696;
@@ -381,14 +393,14 @@ namespace Wswl.MUI
 			// aapt resource value: 0x7f06002f
 			public const int txt_login_userName = 2131099695;
 			
-			// aapt resource value: 0x7f06004d
-			public const int txt_reg_confirmPassword = 2131099725;
+			// aapt resource value: 0x7f060051
+			public const int txt_reg_confirmPassword = 2131099729;
 			
-			// aapt resource value: 0x7f06004c
-			public const int txt_reg_password = 2131099724;
+			// aapt resource value: 0x7f060050
+			public const int txt_reg_password = 2131099728;
 			
-			// aapt resource value: 0x7f06004b
-			public const int txt_reg_userName = 2131099723;
+			// aapt resource value: 0x7f06004f
+			public const int txt_reg_userName = 2131099727;
 			
 			static Id()
 			{
