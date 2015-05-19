@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="32dp">
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/manages_menu"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp" />
+        <TextView
+            android:text="设备管理"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:id="@+id/lbl_manages_title"
+            android:textColor="#FFFFFF" />
+        <TextView
+            android:text=""
+            android:layout_width="40dp"
+            android:layout_height="32dp"
+            android:id="@+id/lbl_manages_info"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2dp" />
+    </LinearLayout>
+    <ImageView
+        android:src="@drawable/header_br"
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:id="@+id/manages_image_br" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/sv_manages"
+        android:minWidth="25px"
+        android:minHeight="25px">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout1">
+            <Button
+                android:text="系统设置"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/button1"
+                android:background="@drawable/tab_bg"
+                android:gravity="center_vertical"
+                android:textColor="#FFFFFF"
+                android:drawableLeft="@drawable/icon_setting"
+                android:drawableRight="@drawable/icon_arrow_right"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="18dp"
+                android:layout_margin="5dp"
+                android:drawablePadding="10dp" />
+            <Button
+                android:text="账号设置"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/button2"
+                android:textSize="18dp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/tab_bg"
+                android:layout_margin="5dp"
+                android:gravity="center_vertical"
+                android:drawableLeft="@drawable/icon_user"
+                android:drawableRight="@drawable/icon_arrow_right"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:drawablePadding="10dp" />
+            <Button
+                android:text="网关设置"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/button3"
+                android:textSize="18dp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/tab_bg"
+                android:layout_margin="5dp"
+                android:gravity="center_vertical"
+                android:drawableLeft="@drawable/icon_gateway"
+                android:drawableRight="@drawable/icon_arrow_right"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:drawablePadding="10dp" />
+            <Button
+                android:text="新品商城"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/button4"
+                android:textSize="18dp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/tab_bg"
+                android:layout_margin="5dp"
+                android:gravity="center_vertical"
+                android:drawableLeft="@drawable/icon_shopping"
+                android:drawableRight="@drawable/icon_arrow_right"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:drawablePadding="10dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

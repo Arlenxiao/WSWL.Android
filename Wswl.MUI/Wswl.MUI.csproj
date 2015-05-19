@@ -15,11 +15,10 @@
     <AndroidApplication>true</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
-    <AndroidUseLatestPlatformSdk>
-    </AndroidUseLatestPlatformSdk>
+    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
     <DevInstrumentationEnabled>True</DevInstrumentationEnabled>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
-    <TargetFrameworkVersion>v4.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -51,6 +50,19 @@
     <WarningLevel>4</WarningLevel>
     <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
     <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+    <AndroidLinkSkip />
+    <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+    <BundleAssemblies>True</BundleAssemblies>
+    <AndroidCreatePackagePerAbi>False</AndroidCreatePackagePerAbi>
+    <AndroidSupportedAbis>armeabi,armeabi-v7a,x86,x86_64,arm64-v8a</AndroidSupportedAbis>
+    <AndroidStoreUncompressedFileExtensions />
+    <MandroidI18n />
+    <Debugger>Xamarin</Debugger>
+    <AotAssemblies>False</AotAssemblies>
+    <EnableLLVM>False</EnableLLVM>
+    <AndroidEnableMultiDex>False</AndroidEnableMultiDex>
+    <EnableProguard>False</EnableProguard>
+    <DevInstrumentationEnabled>False</DevInstrumentationEnabled>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Mono.Android" />
@@ -90,6 +102,15 @@
     <AndroidResource Include="Resources\layout\TabStyle.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\Devices.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\News.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Manages.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml" />
@@ -105,7 +126,7 @@
     <AndroidResource Include="Resources\values\Styles.xml" />
     <AndroidResource Include="Resources\drawable\bg.png" />
     <AndroidResource Include="Resources\drawable\logo.png" />
-    <AndroidResource Include="Resources\drawable\icon_devicesl_white.png" />
+    <AndroidResource Include="Resources\drawable\icon_devices_white.png" />
     <AndroidResource Include="Resources\drawable\icon_home_white.png" />
     <AndroidResource Include="Resources\drawable\icon_more_white.png" />
     <AndroidResource Include="Resources\drawable\icon_news_white.png" />
@@ -121,6 +142,15 @@
     <AndroidResource Include="Resources\drawable\icon_user.png" />
     <AndroidResource Include="Resources\drawable\icon_setting.png" />
     <AndroidResource Include="Resources\drawable\icon_warning.png" />
+    <AndroidResource Include="Resources\drawable\icon_search_white.png" />
+    <AndroidResource Include="Resources\drawable\icon_device.png" />
+    <AndroidResource Include="Resources\drawable\deviceOffline.png" />
+    <AndroidResource Include="Resources\drawable\icon_device_off.png" />
+    <AndroidResource Include="Resources\drawable\icon_outline.png" />
+    <AndroidResource Include="Resources\drawable\icon_shopping.png" />
+    <AndroidResource Include="Resources\drawable\icon_arrow_right.png" />
+    <AndroidResource Include="Resources\drawable\icon_gateway.png" />
+    <AndroidResource Include="Resources\drawable\icon_un_warning.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

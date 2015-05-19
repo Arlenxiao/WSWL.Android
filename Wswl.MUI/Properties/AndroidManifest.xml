@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="Wswl.MUI" android:versionCode="1" android:versionName="1.0">
-	<uses-sdk />
+	<uses-sdk android:minSdkVersion="14" />
 	<application android:label="无声物联" android:icon="@drawable/Icon" android:theme="@style/WswlAppTheme"></application>
 </manifest>

@@ -39,194 +39,208 @@
         android:layout_width="fill_parent"
         android:layout_height="10dp"
         android:id="@+id/home_image_br" />
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="fill_parent"
-        android:layout_height="120dp">
-        <ImageView
-            android:src="@drawable/image_user"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:id="@+id/img_home_user"
-            android:rotation="0"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/sv_home"
+        android:minWidth="25px"
+        android:minHeight="25px">
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/linearLayout1">
+            android:id="@+id/home_layout_content"
+            android:minWidth="25px"
+            android:minHeight="25px">
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/linearLayout2"
-                android:layout_marginTop="10dp">
+                android:layout_height="120dp">
                 <ImageView
-                    android:src="@drawable/icon_user"
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:id="@+id/img_home_icon_user"
-                    android:layout_marginRight="5dp" />
-                <TextView
-                    android:text="二点"
-                    android:gravity="center_vertical"
-                    android:layout_width="wrap_content"
-                    android:layout_height="fill_parent"
-                    android:layout_weight="1"
-                    android:id="@+id/lbl_home_userName"
-                    android:textColor="#FFFFFF" />
-                <ImageView
-                    android:src="@drawable/icon_setting"
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:id="@+id/img_home_icon_setting"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="13dp" />
+                    android:src="@drawable/image_user"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:id="@+id/img_home_user"
+                    android:rotation="0"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/linearLayout1">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/linearLayout2"
+                        android:layout_marginTop="10dp">
+                        <ImageView
+                            android:src="@drawable/icon_user"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:id="@+id/img_home_icon_user"
+                            android:layout_marginRight="5dp" />
+                        <TextView
+                            android:text="二点"
+                            android:gravity="center_vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:id="@+id/lbl_home_userName"
+                            android:textColor="#FFFFFF" />
+                        <ImageView
+                            android:src="@drawable/icon_setting"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:id="@+id/img_home_icon_setting"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="13dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/linearLayout3"
+                        android:gravity="bottom"
+                        android:layout_marginBottom="20dp">
+                        <ImageView
+                            android:src="@drawable/icon_warning"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:id="@+id/img_home_icon_warning"
+                            android:layout_marginRight="5dp" />
+                        <TextView
+                            android:text="喝茶室门窗磁报警"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/lbl_home_warning"
+                            android:gravity="fill"
+                            android:layout_marginBottom="1.5dp"
+                            android:textColor="#EE9A00" />
+                    </LinearLayout>
+                </LinearLayout>
             </LinearLayout>
             <LinearLayout
-                android:orientation="horizontal"
+                android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="fill_parent"
-                android:id="@+id/linearLayout3"
-                android:gravity="bottom"
-                android:layout_marginBottom="20dp">
-                <ImageView
-                    android:src="@drawable/icon_warning"
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:id="@+id/img_home_icon_warning"
-                    android:layout_marginRight="5dp"
-                    android:padding="5dp" />
-                <TextView
-                    android:text="喝茶室门窗磁报警"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/lbl_home_warning"
-                    android:gravity="fill"
-                    android:layout_marginBottom="1.5dp"
-                    android:textColor="#EE9A00" />
+                    android:id="@+id/linearLayout4"
+                    android:layout_marginBottom="5dp">
+                    <Button
+                        android:text="设备:7/10"
+                        android:layout_width="110dp"
+                        android:layout_height="80dp"
+                        android:id="@+id/btn_home_online_devices"
+                        android:background="@drawable/selectedtab"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginLeft="2dp"
+                        android:drawableTop="@drawable/icon_devices_white"
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp" />
+                    <Button
+                        android:text="用户:1/3"
+                        android:layout_width="110dp"
+                        android:layout_height="80dp"
+                        android:id="@+id/btn_home_online_user"
+                        android:background="@drawable/selectedtab"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="3dp"
+                        android:drawableTop="@drawable/icon_user"
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearLayout5"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp">
+                    <TextView
+                        android:text="常用设备"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/lbl_home_devices" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearLayout6"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+                    <Button
+                        android:text="W0103"
+                        android:layout_width="110dp"
+                        android:layout_height="80dp"
+                        android:id="@+id/btn_home_dev_w0103_01"
+                        android:background="@drawable/selectedtab"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="3dp" />
+                    <Button
+                        android:text="茶室开关"
+                        android:layout_width="110dp"
+                        android:layout_height="80dp"
+                        android:id="@+id/btn_home_dev_k0203_01"
+                        android:background="@drawable/selectedtab"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="3dp" />
+                    <Button
+                        android:text="大厅红外"
+                        android:layout_width="110dp"
+                        android:layout_height="80dp"
+                        android:id="@+id/btn_home_dev_A0541_01"
+                        android:background="@drawable/selectedtab"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="3dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearLayout6"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp">
+                    <Button
+                        android:text="办公室开关"
+                        android:layout_width="110dp"
+                        android:layout_height="80dp"
+                        android:id="@+id/btn_home_dev_k0203_02"
+                        android:background="@drawable/selectedtab"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="3dp" />
+                    <Button
+                        android:text="车间红外"
+                        android:layout_width="110dp"
+                        android:layout_height="80dp"
+                        android:id="@+id/btn_home_dev_A0541_02"
+                        android:background="@drawable/selectedtab"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="3dp" />
+                    <Button
+                        android:text="茶室门窗磁"
+                        android:layout_width="110dp"
+                        android:layout_height="80dp"
+                        android:id="@+id/btn_home_dev_A0501_01"
+                        android:background="@drawable/selectedtab"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="3dp" />
+                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/linearLayout4"
-            android:layout_marginBottom="5dp">
-            <Button
-                android:text="设备:7/21"
-                android:layout_width="110dp"
-                android:layout_height="80dp"
-                android:id="@+id/btn_home_online_devices"
-                android:background="@drawable/selectedtab"
-                android:textColor="#FFFFFF"
-                android:layout_marginRight="3dp"
-                android:layout_marginLeft="2dp"
-                android:drawableTop="@drawable/icon_devicesl_white"
-                android:paddingTop="12dp"
-                android:paddingBottom="12dp" />
-            <Button
-                android:text="用户:1/6"
-                android:layout_width="110dp"
-                android:layout_height="80dp"
-                android:id="@+id/btn_home_online_user"
-                android:background="@drawable/selectedtab"
-                android:textColor="#FFFFFF"
-                android:layout_marginLeft="2dp"
-                android:layout_marginRight="3dp"
-                android:drawableTop="@drawable/icon_user"
-                android:paddingTop="12dp"
-                android:paddingBottom="12dp" />
-        </LinearLayout>
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/linearLayout5"
-            android:layout_marginBottom="5dp"
-            android:layout_marginTop="5dp">
-            <TextView
-                android:text="常用设备"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:id="@+id/lbl_home_devices" />
-        </LinearLayout>
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/linearLayout6"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp">
-            <Button
-                android:text="W0103"
-                android:layout_width="110dp"
-                android:layout_height="80dp"
-                android:id="@+id/btn_home_dev_w0103_01"
-                android:background="@drawable/selectedtab"
-                android:textColor="#FFFFFF"
-                android:layout_marginLeft="2dp"
-                android:layout_marginRight="3dp" />
-            <Button
-                android:text="茶室开关"
-                android:layout_width="110dp"
-                android:layout_height="80dp"
-                android:id="@+id/btn_home_dev_k0203_01"
-                android:background="@drawable/selectedtab"
-                android:textColor="#FFFFFF"
-                android:layout_marginLeft="2dp"
-                android:layout_marginRight="3dp" />
-            <Button
-                android:text="大厅红外"
-                android:layout_width="110dp"
-                android:layout_height="80dp"
-                android:id="@+id/btn_home_dev_A0541_01"
-                android:background="@drawable/selectedtab"
-                android:textColor="#FFFFFF"
-                android:layout_marginLeft="2dp"
-                android:layout_marginRight="3dp" />
-        </LinearLayout>
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/linearLayout6"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp">
-            <Button
-                android:text="办公室开关"
-                android:layout_width="110dp"
-                android:layout_height="80dp"
-                android:id="@+id/btn_home_dev_k0203_02"
-                android:background="@drawable/selectedtab"
-                android:textColor="#FFFFFF"
-                android:layout_marginLeft="2dp"
-                android:layout_marginRight="3dp" />
-            <Button
-                android:text="车间红外"
-                android:layout_width="110dp"
-                android:layout_height="80dp"
-                android:id="@+id/btn_home_dev_A0541_02"
-                android:background="@drawable/selectedtab"
-                android:textColor="#FFFFFF"
-                android:layout_marginLeft="2dp"
-                android:layout_marginRight="3dp" />
-            <Button
-                android:text="茶室门窗磁"
-                android:layout_width="110dp"
-                android:layout_height="80dp"
-                android:id="@+id/btn_home_dev_A0501_01"
-                android:background="@drawable/selectedtab"
-                android:textColor="#FFFFFF"
-                android:layout_marginLeft="2dp"
-                android:layout_marginRight="3dp" />
-        </LinearLayout>
-    </LinearLayout>
+    </ScrollView>
 </LinearLayout>

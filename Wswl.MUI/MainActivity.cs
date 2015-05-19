@@ -27,7 +27,7 @@ namespace Wswl.MUI
         {
             CreateTab(typeof(HomeActivity), "主页", "主页", Resource.Drawable.tab_icon_home);
             CreateTab(typeof(NewsActivity), "信息", "信息", Resource.Drawable.icon_news_white);
-            CreateTab(typeof(DevicesActivity), "设备", "设备", Resource.Drawable.icon_devicesl_white);
+            CreateTab(typeof(DevicesActivity), "设备", "设备", Resource.Drawable.icon_devices_white);
             CreateTab(typeof(ManagesActivity), "更多", "更多", Resource.Drawable.icon_more_white);
 
         }

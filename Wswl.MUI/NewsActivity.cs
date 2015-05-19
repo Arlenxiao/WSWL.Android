@@ -12,7 +12,7 @@ using Android.Widget;
 
 namespace Wswl.MUI
 {
-    [Activity(Label = "消息")]
+    [Activity(Label = "信息")]
     public class NewsActivity : Activity
     {
         protected override void OnCreate(Bundle bundle)
@@ -20,6 +20,8 @@ namespace Wswl.MUI
             base.OnCreate(bundle);
 
             // Create your application here
+
+            SetContentView(Resource.Layout.News);
         }
     }
 }
