@@ -24,20 +24,22 @@ namespace Wswl.MUI
         {
             DeciveList = new List<DeviceInfo>
             {
-                new DeviceInfo{Name = "网关",Icon= Resource.Drawable.icon_gateway,IsFind = true},
-                new DeviceInfo{Name = "喝茶室开关",Icon= Resource.Drawable.icon_device,IsFind = true},
-                new DeviceInfo{Name = "办公区开关",Icon= Resource.Drawable.icon_device,IsFind = true},
-                new DeviceInfo{Name = "大厅红外",Icon= Resource.Drawable.icon_device,IsFind = true},
-                new DeviceInfo{Name = "前门开关",Icon= Resource.Drawable.icon_device,IsFind = true},
-                new DeviceInfo{Name = "喝茶室门窗磁",Icon= Resource.Drawable.icon_device,IsFind = true},
-                new DeviceInfo{Name = "智能继电器",Icon= Resource.Drawable.icon_device,IsFind = true},
-                new DeviceInfo{Name = "触摸开关",Icon= Resource.Drawable.icon_device,IsFind = true},
-                new DeviceInfo{Name = "红外感应器",Icon= Resource.Drawable.icon_device,IsFind = true},
-                new DeviceInfo{Name = "门窗磁",Icon= Resource.Drawable.icon_device,IsFind = true},
-                new DeviceInfo{Name = "环境探测器",Icon= Resource.Drawable.icon_device,IsFind = true},
-                new DeviceInfo{Name = "调色控制器",Icon= Resource.Drawable.icon_device,IsFind = true},
-                new DeviceInfo{Name = "智能门锁",Icon= Resource.Drawable.icon_device,IsFind = true},
+                new DeviceInfo{Name = "网关",Icon= Resource.Drawable.icon_gateway,IsFind = true,Type=DeviceType.W0103},
+                new DeviceInfo{Name = "喝茶室开关",Icon= Resource.Drawable.icon_device,IsFind = true,Type=DeviceType.K0203},
+                new DeviceInfo{Name = "办公区开关",Icon= Resource.Drawable.icon_device,IsFind = true,Type=DeviceType.K0203},
+                new DeviceInfo{Name = "大厅红外",Icon= Resource.Drawable.icon_device,IsFind = false,Type=DeviceType.A0541},
+                new DeviceInfo{Name = "前门开关",Icon= Resource.Drawable.icon_device,IsFind = true,Type=DeviceType.K0203},
+                new DeviceInfo{Name = "喝茶室门窗磁",Icon= Resource.Drawable.icon_device,IsFind = true,Type=DeviceType.A0501},
+                new DeviceInfo{Name = "智能继电器",Icon= Resource.Drawable.icon_device,IsFind = true,Type=DeviceType.K0221},
+                new DeviceInfo{Name = "触摸开关",Icon= Resource.Drawable.icon_device,IsFind = false,Type=DeviceType.K0203},
+                new DeviceInfo{Name = "红外感应器",Icon= Resource.Drawable.icon_device,IsFind = true,Type=DeviceType.A0541},
+                new DeviceInfo{Name = "门窗磁",Icon= Resource.Drawable.icon_device,IsFind = false,Type=DeviceType.A0501},
+                new DeviceInfo{Name = "环境探测器",Icon= Resource.Drawable.icon_device,IsFind = false,Type=DeviceType.G0311},
+                new DeviceInfo{Name = "调色控制器",Icon= Resource.Drawable.icon_device,IsFind = true,Type=DeviceType.C0611},
+                new DeviceInfo{Name = "智能门锁",Icon= Resource.Drawable.icon_device,IsFind = false,Type=DeviceType.J0411},
             };
+
+            DeciveList = DeciveList.OrderByDescending(m => m.IsFind).ToList();
         }
 
         #region 属性
@@ -84,7 +86,7 @@ namespace Wswl.MUI
                 for (var j = 0; j < count; j++)
                 {
                     var device = DeciveList[n + j];
-                    var btn = new Button(this) { Text = device.Name, LayoutParameters = btnParams, };
+                    var btn = new Button(this) { Text = device.Name, LayoutParameters = btnParams, Tag = (int)device.Type };
                     btnParams.SetMargins(5, 5, 5, 5);
                     btn.SetBackgroundResource(device.IsFind ? Resource.Drawable.selectedTab : Resource.Drawable.deviceOffline);
                     btn.SetTextColor(Color.White);
@@ -94,9 +96,9 @@ namespace Wswl.MUI
                     btn.Click += (s, e) =>
                     {
                         var sender = s as Button;
-#if DEBUG
-                        Toast.MakeText(this, str + "  " + sender.Text, ToastLength.Short).Show();
-#endif
+                        if (sender == null) return;
+                        var type = Convert.ToInt32(sender.Tag);
+                        StartActivity(BaseHelper.GetActivityType(type));
                     };
                     linearLayout.AddView(btn);
                     var k = rows - 1;

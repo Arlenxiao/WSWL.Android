@@ -15,5 +15,8 @@ namespace Wswl.MUI.Model
         /// <summary>是否发现设备</summary>
         public Boolean IsFind { get; set; }
 
+        /// <summary>设备类型</summary>
+        public DeviceType Type { get; set; }
+
     }
 }

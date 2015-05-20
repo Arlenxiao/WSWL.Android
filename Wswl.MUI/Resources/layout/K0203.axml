@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="32dp">
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/k02_menu"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp" />
+        <TextView
+            android:text="触摸开关"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:id="@+id/k02_title"
+            android:textColor="#FFFFFF" />
+        <TextView
+            android:text="3/21"
+            android:layout_width="40dp"
+            android:layout_height="32dp"
+            android:id="@+id/k02_info"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2dp" />
+    </LinearLayout>
+    <ImageView
+        android:src="@drawable/header_br"
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:id="@+id/news_image_br" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/sv_k02"
+        android:minWidth="25px"
+        android:minHeight="25px">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout1">
+            <Switch
+                android:text="Is Xamarin.Android great?"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:textOn="YES"
+                android:textOff="NO" />
+            <Button
+                android:text="Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button1" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

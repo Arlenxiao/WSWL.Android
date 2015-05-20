@@ -77,12 +77,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseHelper.cs" />
     <Compile Include="DevicesActivity.cs" />
     <Compile Include="HomeActivity.cs" />
+    <Compile Include="K0203Activity.cs" />
     <Compile Include="LoginActivity.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="ManagesActivity.cs" />
     <Compile Include="Model\DeviceInfo.cs" />
+    <Compile Include="Model\DeviceType.cs" />
     <Compile Include="NewsActivity.cs" />
     <Compile Include="RegisterActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
@@ -114,6 +117,9 @@
       <SubType>AndroidResource</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\Manages.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\K0203.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
   </ItemGroup>

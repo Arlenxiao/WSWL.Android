@@ -25,12 +25,12 @@ namespace Wswl.MUI
         {
             DeciveList = new List<DeviceInfo>
             {
-                new DeviceInfo{Name = "网关",Icon= Resource.Drawable.icon_gateway,IsFind = true},
-                new DeviceInfo{Name = "喝茶室开关",Icon= Resource.Drawable.icon_device,IsFind = true},
-                new DeviceInfo{Name = "办公区开关",Icon= Resource.Drawable.icon_device,IsFind = true},
-                new DeviceInfo{Name = "大厅红外",Icon= Resource.Drawable.icon_device,IsFind = true},
-                new DeviceInfo{Name = "前门开关",Icon= Resource.Drawable.icon_device,IsFind = true},
-                new DeviceInfo{Name = "喝茶室门窗磁",Icon= Resource.Drawable.icon_device,IsFind = true},
+                new DeviceInfo{Name = "网关",Icon= Resource.Drawable.icon_gateway,IsFind = true,Type=DeviceType.W0103},
+                new DeviceInfo{Name = "喝茶室开关",Icon= Resource.Drawable.icon_device,IsFind = true,Type=DeviceType.K0203},
+                new DeviceInfo{Name = "办公区开关",Icon= Resource.Drawable.icon_device,IsFind = true,Type=DeviceType.K0203},
+                new DeviceInfo{Name = "大厅红外",Icon= Resource.Drawable.icon_device,IsFind = false,Type=DeviceType.A0541},
+                new DeviceInfo{Name = "前门开关",Icon= Resource.Drawable.icon_device,IsFind = true,Type=DeviceType.K0203},
+                new DeviceInfo{Name = "喝茶室门窗磁",Icon= Resource.Drawable.icon_device,IsFind = true,Type=DeviceType.A0501},
             };
         }
 
@@ -131,7 +131,7 @@ namespace Wswl.MUI
                 for (var j = 0; j < count; j++)
                 {
                     var device = DeciveList[n + j];
-                    var btn = new Button(this) { Text = device.Name, LayoutParameters = btnParams, };
+                    var btn = new Button(this) { Text = device.Name, LayoutParameters = btnParams, Tag = (int)device.Type };
                     btnParams.SetMargins(5, 5, 5, 5);
                     btn.SetBackgroundResource(device.IsFind ? Resource.Drawable.selectedTab : Resource.Drawable.deviceOffline);
                     btn.SetTextColor(Color.White);
@@ -141,9 +141,9 @@ namespace Wswl.MUI
                     btn.Click += (s, e) =>
                     {
                         var sender = s as Button;
-#if DEBUG
-                        Toast.MakeText(this, str + "  " + sender.Text, ToastLength.Short).Show();
-#endif
+                        if (sender == null) return;
+                        var type = Convert.ToInt32(sender.Tag);
+                        StartActivity(BaseHelper.GetActivityType(type));
                     };
                     linearLayout.AddView(btn);
                 }
@@ -166,7 +166,6 @@ namespace Wswl.MUI
                 {
                     var sender = s as Button;
                     Toast.MakeText(this, str_debug + "  " + sender.Text, ToastLength.Short).Show();
-
                 };
                 linearLayout_debug.AddView(btn);
             }
