@@ -25,10 +25,10 @@ namespace Wswl.MUI
         /// <summary>初始化选项卡</summary>
         private void InitTab()
         {
-            CreateTab(typeof(HomeActivity), "主页", "主页", Resource.Drawable.tab_icon_home);
-            CreateTab(typeof(NewsActivity), "信息", "信息", Resource.Drawable.icon_news_white);
-            CreateTab(typeof(DevicesActivity), "设备", "设备", Resource.Drawable.icon_devices_white);
-            CreateTab(typeof(ManagesActivity), "更多", "更多", Resource.Drawable.icon_more_white);
+            CreateTab(typeof(HomeActivity), "HomeActivity", "主页", Resource.Drawable.tab_icon_home);
+            CreateTab(typeof(NewsActivity), "NewsActivity", "信息", Resource.Drawable.icon_news_white);
+            CreateTab(typeof(DevicesActivity), "DevicesActivity", "设备", Resource.Drawable.icon_devices_white);
+            CreateTab(typeof(ManagesActivity), "ManagesActivity", "更多", Resource.Drawable.icon_more_white);
 
         }
 
@@ -56,6 +56,13 @@ namespace Wswl.MUI
             spec.SetContent(intent);
 
             TabHost.AddTab(spec);
+        }
+
+        /// <summary>选择当前Tab项</summary>
+        /// <param name="tag"></param>
+        public void SetCurrentTab(string tag)
+        {
+            TabHost.SetCurrentTabByTag(tag);
         }
 
     }

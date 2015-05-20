@@ -147,125 +147,74 @@ namespace Wswl.MUI
 			// aapt resource value: 0x7f060000
 			public const int app_message_image = 2131099648;
 			
-			// aapt resource value: 0x7f060008
-			public const int btn_device_dev_001 = 2131099656;
+			// aapt resource value: 0x7f060018
+			public const int btn_home_online_devices = 2131099672;
 			
-			// aapt resource value: 0x7f060009
-			public const int btn_device_dev_002 = 2131099657;
+			// aapt resource value: 0x7f060019
+			public const int btn_home_online_user = 2131099673;
 			
-			// aapt resource value: 0x7f06000a
-			public const int btn_device_dev_003 = 2131099658;
+			// aapt resource value: 0x7f060022
+			public const int btn_login_link = 2131099682;
 			
-			// aapt resource value: 0x7f06000b
-			public const int btn_device_dev_004 = 2131099659;
+			// aapt resource value: 0x7f060020
+			public const int btn_login_login = 2131099680;
 			
-			// aapt resource value: 0x7f06000c
-			public const int btn_device_dev_005 = 2131099660;
-			
-			// aapt resource value: 0x7f06000d
-			public const int btn_device_dev_006 = 2131099661;
-			
-			// aapt resource value: 0x7f06000e
-			public const int btn_device_dev_007 = 2131099662;
-			
-			// aapt resource value: 0x7f06000f
-			public const int btn_device_dev_008 = 2131099663;
-			
-			// aapt resource value: 0x7f060010
-			public const int btn_device_dev_009 = 2131099664;
-			
-			// aapt resource value: 0x7f060011
-			public const int btn_device_dev_010 = 2131099665;
-			
-			// aapt resource value: 0x7f060012
-			public const int btn_device_dev_011 = 2131099666;
-			
-			// aapt resource value: 0x7f06002d
-			public const int btn_home_dev_A0501_01 = 2131099693;
-			
-			// aapt resource value: 0x7f06002a
-			public const int btn_home_dev_A0541_01 = 2131099690;
-			
-			// aapt resource value: 0x7f06002c
-			public const int btn_home_dev_A0541_02 = 2131099692;
-			
-			// aapt resource value: 0x7f060029
-			public const int btn_home_dev_k0203_01 = 2131099689;
-			
-			// aapt resource value: 0x7f06002b
-			public const int btn_home_dev_k0203_02 = 2131099691;
-			
-			// aapt resource value: 0x7f060028
-			public const int btn_home_dev_w0103_01 = 2131099688;
-			
-			// aapt resource value: 0x7f060023
-			public const int btn_home_online_devices = 2131099683;
-			
-			// aapt resource value: 0x7f060024
-			public const int btn_home_online_user = 2131099684;
-			
-			// aapt resource value: 0x7f060033
-			public const int btn_login_link = 2131099699;
-			
-			// aapt resource value: 0x7f060031
-			public const int btn_login_login = 2131099697;
-			
-			// aapt resource value: 0x7f060032
-			public const int btn_login_register = 2131099698;
-			
-			// aapt resource value: 0x7f060053
-			public const int btn_reg_back = 2131099731;
-			
-			// aapt resource value: 0x7f060052
-			public const int btn_reg_register = 2131099730;
-			
-			// aapt resource value: 0x7f06004c
-			public const int button10_devices = 2131099724;
-			
-			// aapt resource value: 0x7f06004d
-			public const int button11_devices = 2131099725;
-			
-			// aapt resource value: 0x7f06004b
-			public const int button12_devices = 2131099723;
+			// aapt resource value: 0x7f060021
+			public const int btn_login_register = 2131099681;
 			
 			// aapt resource value: 0x7f060042
-			public const int button1_devices = 2131099714;
+			public const int btn_reg_back = 2131099714;
 			
-			// aapt resource value: 0x7f060039
-			public const int button1_manages = 2131099705;
-			
-			// aapt resource value: 0x7f060043
-			public const int button2_devices = 2131099715;
-			
-			// aapt resource value: 0x7f06003a
-			public const int button2_manages = 2131099706;
-			
-			// aapt resource value: 0x7f060044
-			public const int button3_devices = 2131099716;
+			// aapt resource value: 0x7f060041
+			public const int btn_reg_register = 2131099713;
 			
 			// aapt resource value: 0x7f06003b
-			public const int button3_manages = 2131099707;
-			
-			// aapt resource value: 0x7f060045
-			public const int button4_devices = 2131099717;
+			public const int button10_devices = 2131099707;
 			
 			// aapt resource value: 0x7f06003c
-			public const int button4_manages = 2131099708;
+			public const int button11_devices = 2131099708;
 			
-			// aapt resource value: 0x7f060046
-			public const int button5_devices = 2131099718;
+			// aapt resource value: 0x7f06003a
+			public const int button12_devices = 2131099706;
 			
-			// aapt resource value: 0x7f060047
-			public const int button6_devices = 2131099719;
+			// aapt resource value: 0x7f060031
+			public const int button1_devices = 2131099697;
 			
-			// aapt resource value: 0x7f060048
-			public const int button7_devices = 2131099720;
+			// aapt resource value: 0x7f060028
+			public const int button1_manages = 2131099688;
 			
-			// aapt resource value: 0x7f060049
-			public const int button8_devices = 2131099721;
+			// aapt resource value: 0x7f060032
+			public const int button2_devices = 2131099698;
 			
-			// aapt resource value: 0x7f06004a
-			public const int button9_devices = 2131099722;
+			// aapt resource value: 0x7f060029
+			public const int button2_manages = 2131099689;
+			
+			// aapt resource value: 0x7f060033
+			public const int button3_devices = 2131099699;
+			
+			// aapt resource value: 0x7f06002a
+			public const int button3_manages = 2131099690;
+			
+			// aapt resource value: 0x7f060034
+			public const int button4_devices = 2131099700;
+			
+			// aapt resource value: 0x7f06002b
+			public const int button4_manages = 2131099691;
+			
+			// aapt resource value: 0x7f060035
+			public const int button5_devices = 2131099701;
+			
+			// aapt resource value: 0x7f060036
+			public const int button6_devices = 2131099702;
+			
+			// aapt resource value: 0x7f060037
+			public const int button7_devices = 2131099703;
+			
+			// aapt resource value: 0x7f060038
+			public const int button8_devices = 2131099704;
+			
+			// aapt resource value: 0x7f060039
+			public const int button9_devices = 2131099705;
 			
 			// aapt resource value: 0x7f060007
 			public const int deveces_content = 2131099655;
@@ -276,29 +225,32 @@ namespace Wswl.MUI
 			// aapt resource value: 0x7f060002
 			public const int devices_menu = 2131099650;
 			
-			// aapt resource value: 0x7f060016
-			public const int home_image_br = 2131099670;
+			// aapt resource value: 0x7f06000b
+			public const int home_image_br = 2131099659;
 			
-			// aapt resource value: 0x7f060018
-			public const int home_layout_content = 2131099672;
+			// aapt resource value: 0x7f06000d
+			public const int home_layout_content = 2131099661;
+			
+			// aapt resource value: 0x7f060008
+			public const int home_menu_gateway = 2131099656;
 			
 			// aapt resource value: 0x7f060013
-			public const int home_menu_gateway = 2131099667;
+			public const int img_home_icon_setting = 2131099667;
 			
-			// aapt resource value: 0x7f06001e
-			public const int img_home_icon_setting = 2131099678;
+			// aapt resource value: 0x7f060011
+			public const int img_home_icon_user = 2131099665;
+			
+			// aapt resource value: 0x7f060015
+			public const int img_home_icon_warning = 2131099669;
+			
+			// aapt resource value: 0x7f06000e
+			public const int img_home_user = 2131099662;
+			
+			// aapt resource value: 0x7f06001d
+			public const int img_login_logo = 2131099677;
 			
 			// aapt resource value: 0x7f06001c
-			public const int img_home_icon_user = 2131099676;
-			
-			// aapt resource value: 0x7f060020
-			public const int img_home_icon_warning = 2131099680;
-			
-			// aapt resource value: 0x7f060019
-			public const int img_home_user = 2131099673;
-			
-			// aapt resource value: 0x7f06002e
-			public const int img_login_logo = 2131099694;
+			public const int layout_home_devices = 2131099676;
 			
 			// aapt resource value: 0x7f060004
 			public const int lbl_devices_info = 2131099652;
@@ -306,101 +258,98 @@ namespace Wswl.MUI
 			// aapt resource value: 0x7f060003
 			public const int lbl_devices_title = 2131099651;
 			
-			// aapt resource value: 0x7f060015
-			public const int lbl_home_alarm = 2131099669;
-			
-			// aapt resource value: 0x7f060026
-			public const int lbl_home_devices = 2131099686;
-			
-			// aapt resource value: 0x7f060014
-			public const int lbl_home_gateway = 2131099668;
-			
-			// aapt resource value: 0x7f06001d
-			public const int lbl_home_userName = 2131099677;
-			
-			// aapt resource value: 0x7f060021
-			public const int lbl_home_warning = 2131099681;
-			
-			// aapt resource value: 0x7f060036
-			public const int lbl_manages_info = 2131099702;
-			
-			// aapt resource value: 0x7f060035
-			public const int lbl_manages_title = 2131099701;
-			
-			// aapt resource value: 0x7f06003f
-			public const int lbl_news_info = 2131099711;
-			
-			// aapt resource value: 0x7f06003e
-			public const int lbl_news_title = 2131099710;
-			
-			// aapt resource value: 0x7f06004e
-			public const int lbl_reg_title = 2131099726;
-			
-			// aapt resource value: 0x7f06001a
-			public const int linearLayout1 = 2131099674;
+			// aapt resource value: 0x7f06000a
+			public const int lbl_home_alarm = 2131099658;
 			
 			// aapt resource value: 0x7f06001b
-			public const int linearLayout2 = 2131099675;
+			public const int lbl_home_devices = 2131099675;
 			
-			// aapt resource value: 0x7f06001f
-			public const int linearLayout3 = 2131099679;
+			// aapt resource value: 0x7f060009
+			public const int lbl_home_gateway = 2131099657;
 			
-			// aapt resource value: 0x7f060022
-			public const int linearLayout4 = 2131099682;
+			// aapt resource value: 0x7f060012
+			public const int lbl_home_userName = 2131099666;
+			
+			// aapt resource value: 0x7f060016
+			public const int lbl_home_warning = 2131099670;
 			
 			// aapt resource value: 0x7f060025
-			public const int linearLayout5 = 2131099685;
+			public const int lbl_manages_info = 2131099685;
 			
-			// aapt resource value: 0x7f060027
-			public const int linearLayout6 = 2131099687;
+			// aapt resource value: 0x7f060024
+			public const int lbl_manages_title = 2131099684;
 			
-			// aapt resource value: 0x7f060037
-			public const int manages_image_br = 2131099703;
+			// aapt resource value: 0x7f06002e
+			public const int lbl_news_info = 2131099694;
 			
-			// aapt resource value: 0x7f060034
-			public const int manages_menu = 2131099700;
-			
-			// aapt resource value: 0x7f060040
-			public const int news_image_br = 2131099712;
+			// aapt resource value: 0x7f06002d
+			public const int lbl_news_title = 2131099693;
 			
 			// aapt resource value: 0x7f06003d
-			public const int news_menu = 2131099709;
+			public const int lbl_reg_title = 2131099709;
 			
-			// aapt resource value: 0x7f060041
-			public const int scrollView1 = 2131099713;
+			// aapt resource value: 0x7f06000f
+			public const int linearLayout1 = 2131099663;
+			
+			// aapt resource value: 0x7f060010
+			public const int linearLayout2 = 2131099664;
+			
+			// aapt resource value: 0x7f060014
+			public const int linearLayout3 = 2131099668;
+			
+			// aapt resource value: 0x7f060017
+			public const int linearLayout4 = 2131099671;
+			
+			// aapt resource value: 0x7f06001a
+			public const int linearLayout5 = 2131099674;
+			
+			// aapt resource value: 0x7f060026
+			public const int manages_image_br = 2131099686;
+			
+			// aapt resource value: 0x7f060023
+			public const int manages_menu = 2131099683;
+			
+			// aapt resource value: 0x7f06002f
+			public const int news_image_br = 2131099695;
+			
+			// aapt resource value: 0x7f06002c
+			public const int news_menu = 2131099692;
+			
+			// aapt resource value: 0x7f060030
+			public const int scrollView1 = 2131099696;
 			
 			// aapt resource value: 0x7f060006
 			public const int sv_devices = 2131099654;
 			
-			// aapt resource value: 0x7f060017
-			public const int sv_home = 2131099671;
+			// aapt resource value: 0x7f06000c
+			public const int sv_home = 2131099660;
 			
-			// aapt resource value: 0x7f060038
-			public const int sv_manages = 2131099704;
+			// aapt resource value: 0x7f060027
+			public const int sv_manages = 2131099687;
 			
-			// aapt resource value: 0x7f060055
-			public const int tabIcon = 2131099733;
+			// aapt resource value: 0x7f060044
+			public const int tabIcon = 2131099716;
 			
-			// aapt resource value: 0x7f060054
-			public const int tabLayout = 2131099732;
+			// aapt resource value: 0x7f060043
+			public const int tabLayout = 2131099715;
 			
-			// aapt resource value: 0x7f060056
-			public const int tabText = 2131099734;
+			// aapt resource value: 0x7f060045
+			public const int tabText = 2131099717;
 			
-			// aapt resource value: 0x7f060030
-			public const int txt_login_password = 2131099696;
+			// aapt resource value: 0x7f06001f
+			public const int txt_login_password = 2131099679;
 			
-			// aapt resource value: 0x7f06002f
-			public const int txt_login_userName = 2131099695;
+			// aapt resource value: 0x7f06001e
+			public const int txt_login_userName = 2131099678;
 			
-			// aapt resource value: 0x7f060051
-			public const int txt_reg_confirmPassword = 2131099729;
+			// aapt resource value: 0x7f060040
+			public const int txt_reg_confirmPassword = 2131099712;
 			
-			// aapt resource value: 0x7f060050
-			public const int txt_reg_password = 2131099728;
+			// aapt resource value: 0x7f06003f
+			public const int txt_reg_password = 2131099711;
 			
-			// aapt resource value: 0x7f06004f
-			public const int txt_reg_userName = 2131099727;
+			// aapt resource value: 0x7f06003e
+			public const int txt_reg_userName = 2131099710;
 			
 			static Id()
 			{

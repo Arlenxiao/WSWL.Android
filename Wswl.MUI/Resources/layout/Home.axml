@@ -171,74 +171,80 @@
                         android:id="@+id/lbl_home_devices" />
                 </LinearLayout>
                 <LinearLayout
-                    android:orientation="horizontal"
+                    android:orientation="vertical"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/linearLayout6"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="5dp">
-                    <Button
-                        android:text="W0103"
-                        android:layout_width="110dp"
-                        android:layout_height="80dp"
-                        android:id="@+id/btn_home_dev_w0103_01"
-                        android:background="@drawable/selectedtab"
-                        android:textColor="#FFFFFF"
-                        android:layout_marginLeft="2dp"
-                        android:layout_marginRight="3dp" />
-                    <Button
-                        android:text="茶室开关"
-                        android:layout_width="110dp"
-                        android:layout_height="80dp"
-                        android:id="@+id/btn_home_dev_k0203_01"
-                        android:background="@drawable/selectedtab"
-                        android:textColor="#FFFFFF"
-                        android:layout_marginLeft="2dp"
-                        android:layout_marginRight="3dp" />
-                    <Button
-                        android:text="大厅红外"
-                        android:layout_width="110dp"
-                        android:layout_height="80dp"
-                        android:id="@+id/btn_home_dev_A0541_01"
-                        android:background="@drawable/selectedtab"
-                        android:textColor="#FFFFFF"
-                        android:layout_marginLeft="2dp"
-                        android:layout_marginRight="3dp" />
-                </LinearLayout>
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/linearLayout6"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="5dp">
-                    <Button
-                        android:text="办公室开关"
-                        android:layout_width="110dp"
-                        android:layout_height="80dp"
-                        android:id="@+id/btn_home_dev_k0203_02"
-                        android:background="@drawable/selectedtab"
-                        android:textColor="#FFFFFF"
-                        android:layout_marginLeft="2dp"
-                        android:layout_marginRight="3dp" />
-                    <Button
-                        android:text="车间红外"
-                        android:layout_width="110dp"
-                        android:layout_height="80dp"
-                        android:id="@+id/btn_home_dev_A0541_02"
-                        android:background="@drawable/selectedtab"
-                        android:textColor="#FFFFFF"
-                        android:layout_marginLeft="2dp"
-                        android:layout_marginRight="3dp" />
-                    <Button
-                        android:text="茶室门窗磁"
-                        android:layout_width="110dp"
-                        android:layout_height="80dp"
-                        android:id="@+id/btn_home_dev_A0501_01"
-                        android:background="@drawable/selectedtab"
-                        android:textColor="#FFFFFF"
-                        android:layout_marginLeft="2dp"
-                        android:layout_marginRight="3dp" />
+                    android:layout_height="match_parent"
+                    android:id="@+id/layout_home_devices">
+                <!--<LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/linearLayout6"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp">
+                        <Button
+                            android:text="W0103"
+                            android:layout_width="110dp"
+                            android:layout_height="80dp"
+                            android:id="@+id/btn_home_dev_w0103_01"
+                            android:background="@drawable/selectedtab"
+                            android:textColor="#FFFFFF"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="3dp" />
+                        <Button
+                            android:text="茶室开关"
+                            android:layout_width="110dp"
+                            android:layout_height="80dp"
+                            android:id="@+id/btn_home_dev_k0203_01"
+                            android:background="@drawable/selectedtab"
+                            android:textColor="#FFFFFF"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="3dp" />
+                        <Button
+                            android:text="大厅红外"
+                            android:layout_width="110dp"
+                            android:layout_height="80dp"
+                            android:id="@+id/btn_home_dev_A0541_01"
+                            android:background="@drawable/selectedtab"
+                            android:textColor="#FFFFFF"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="3dp" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/linearLayout6"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp">
+                        <Button
+                            android:text="办公室开关"
+                            android:layout_width="110dp"
+                            android:layout_height="80dp"
+                            android:id="@+id/btn_home_dev_k0203_02"
+                            android:background="@drawable/selectedtab"
+                            android:textColor="#FFFFFF"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="3dp" />
+                        <Button
+                            android:text="车间红外"
+                            android:layout_width="110dp"
+                            android:layout_height="80dp"
+                            android:id="@+id/btn_home_dev_A0541_02"
+                            android:background="@drawable/selectedtab"
+                            android:textColor="#FFFFFF"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="3dp" />
+                        <Button
+                            android:text="茶室门窗磁"
+                            android:layout_width="110dp"
+                            android:layout_height="80dp"
+                            android:id="@+id/btn_home_dev_A0501_01"
+                            android:background="@drawable/selectedtab"
+                            android:textColor="#FFFFFF"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="3dp" />
+                    </LinearLayout>-->
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>

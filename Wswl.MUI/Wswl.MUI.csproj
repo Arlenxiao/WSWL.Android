@@ -82,6 +82,7 @@
     <Compile Include="LoginActivity.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="ManagesActivity.cs" />
+    <Compile Include="Model\DeviceInfo.cs" />
     <Compile Include="NewsActivity.cs" />
     <Compile Include="RegisterActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
