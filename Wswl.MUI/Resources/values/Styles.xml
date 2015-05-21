@@ -4,7 +4,7 @@
   
   <!--无声物联主题资源-->
   <style name="WswlAppTheme" parent="@android:style/Theme.NoTitleBar">
-    <item name="android:windowBackground">@drawable/bg</item>
+    <item name="android:windowBackground">@drawable/bg_black</item>
   </style>
   
 </resources>

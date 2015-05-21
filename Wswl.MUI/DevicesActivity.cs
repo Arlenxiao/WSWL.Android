@@ -17,9 +17,6 @@ namespace Wswl.MUI
     [Activity(Label = "设备列表")]
     public class DevicesActivity : Activity
     {
-
-
-
         public DevicesActivity()
         {
             DeciveList = new List<DeviceInfo>

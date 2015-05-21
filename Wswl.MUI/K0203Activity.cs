@@ -10,6 +10,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.Graphics;
+using Wswl.MUI.Model;
 
 namespace Wswl.MUI
 {
@@ -25,17 +26,17 @@ namespace Wswl.MUI
             SetContentView(Resource.Layout.K0203);
 
             //初始化开关
-            InitSwitch(new Random().Next(0, 10));
+            InitSwitch(new SwitchK0203());
         }
 
         /// <summary>初始化开关</summary>
-        private void InitSwitch(Int32 type)
+        private void InitSwitch(ISwitch sw)
         {
 
             var width = Convert.ToInt32(110 * Resources.DisplayMetrics.Xdpi / 160);
             var height = Convert.ToInt32(80 * Resources.DisplayMetrics.Ydpi / 160);
             var num = Convert.ToInt32(Resources.DisplayMetrics.WidthPixels / width);
-            var rows = type / num + ((type % num == 0) ? 0 : 1);
+            var rows = sw.Count / num + ((sw.Count % num == 0) ? 0 : 1);
 
             var layout = FindViewById<LinearLayout>(Resource.Id.k0203_layout_content);
 
@@ -44,16 +45,17 @@ namespace Wswl.MUI
                 var linearLayout = new LinearLayout(this);
                 var btnParams = new LinearLayout.LayoutParams(width, height);
                 var n = i * num;
-                var g = type - n;
+                var g = sw.Count - n;
                 var count = g > num ? num : g;
                 for (var j = 0; j < count; j++)
                 {
-                    var btn = new Button(this) { Text = "开关" + (n + j), LayoutParameters = btnParams, Tag = 0 };
+                    var pos = sw.Positions[n + j];
+                    var btn = new Button(this) { Text = pos.Name, LayoutParameters = btnParams, Tag = pos.State };
                     btnParams.SetMargins(10, 10, 10, 10);
-                    btn.SetBackgroundResource(Resource.Drawable.deviceOffline);
+                    btn.SetBackgroundResource(pos.State == 0 ? Resource.Drawable.deviceOffline : Resource.Drawable.selectedTab);
                     btn.SetTextColor(Color.Gray);
                     btn.SetPadding(0, 12, 0, 12);
-                    btn.SetCompoundDrawablesWithIntrinsicBounds(0, Resource.Drawable.icon_device, 0, 0);
+                    btn.SetCompoundDrawablesWithIntrinsicBounds(0, pos.State == 0 ? Resource.Drawable.icon_device : Resource.Drawable.icon_devices_white, 0, 0);
                     btn.Click += (s, e) =>
                     {
                         var sender = s as Button;

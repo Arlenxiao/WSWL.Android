@@ -57,85 +57,88 @@ namespace Wswl.MUI
 			public const int bg = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public const int deviceOffline = 2130837505;
+			public const int bg_black = 2130837505;
 			
 			// aapt resource value: 0x7f020002
-			public const int header_br = 2130837506;
+			public const int deviceOffline = 2130837506;
 			
 			// aapt resource value: 0x7f020003
-			public const int home_alarm = 2130837507;
+			public const int header_br = 2130837507;
 			
 			// aapt resource value: 0x7f020004
-			public const int Icon = 2130837508;
+			public const int home_alarm = 2130837508;
 			
 			// aapt resource value: 0x7f020005
-			public const int icon_arrow_right = 2130837509;
+			public const int Icon = 2130837509;
 			
 			// aapt resource value: 0x7f020006
-			public const int icon_device = 2130837510;
+			public const int icon_arrow_right = 2130837510;
 			
 			// aapt resource value: 0x7f020007
-			public const int icon_device_off = 2130837511;
+			public const int icon_device = 2130837511;
 			
 			// aapt resource value: 0x7f020008
-			public const int icon_devices_white = 2130837512;
+			public const int icon_device_off = 2130837512;
 			
 			// aapt resource value: 0x7f020009
-			public const int icon_gateway = 2130837513;
+			public const int icon_devices_white = 2130837513;
 			
 			// aapt resource value: 0x7f02000a
-			public const int icon_home_white = 2130837514;
+			public const int icon_gateway = 2130837514;
 			
 			// aapt resource value: 0x7f02000b
-			public const int icon_menu_white = 2130837515;
+			public const int icon_home_white = 2130837515;
 			
 			// aapt resource value: 0x7f02000c
-			public const int icon_more_white = 2130837516;
+			public const int icon_menu_white = 2130837516;
 			
 			// aapt resource value: 0x7f02000d
-			public const int icon_news_white = 2130837517;
+			public const int icon_more_white = 2130837517;
 			
 			// aapt resource value: 0x7f02000e
-			public const int icon_outline = 2130837518;
+			public const int icon_news_white = 2130837518;
 			
 			// aapt resource value: 0x7f02000f
-			public const int icon_search_white = 2130837519;
+			public const int icon_outline = 2130837519;
 			
 			// aapt resource value: 0x7f020010
-			public const int icon_setting = 2130837520;
+			public const int icon_search_white = 2130837520;
 			
 			// aapt resource value: 0x7f020011
-			public const int icon_shopping = 2130837521;
+			public const int icon_setting = 2130837521;
 			
 			// aapt resource value: 0x7f020012
-			public const int icon_un_warning = 2130837522;
+			public const int icon_shopping = 2130837522;
 			
 			// aapt resource value: 0x7f020013
-			public const int icon_user = 2130837523;
+			public const int icon_un_warning = 2130837523;
 			
 			// aapt resource value: 0x7f020014
-			public const int icon_warning = 2130837524;
+			public const int icon_user = 2130837524;
 			
 			// aapt resource value: 0x7f020015
-			public const int image_user = 2130837525;
+			public const int icon_warning = 2130837525;
 			
 			// aapt resource value: 0x7f020016
-			public const int logo = 2130837526;
+			public const int image_user = 2130837526;
 			
 			// aapt resource value: 0x7f020017
-			public const int selectedTab = 2130837527;
+			public const int logo = 2130837527;
 			
 			// aapt resource value: 0x7f020018
-			public const int tab_bg = 2130837528;
+			public const int selectedTab = 2130837528;
 			
 			// aapt resource value: 0x7f020019
-			public const int tab_icon_home = 2130837529;
+			public const int tab_bg = 2130837529;
 			
 			// aapt resource value: 0x7f02001a
-			public const int tab_state = 2130837530;
+			public const int tab_icon_home = 2130837530;
 			
 			// aapt resource value: 0x7f02001b
-			public const int unselectedTab = 2130837531;
+			public const int tab_state = 2130837531;
+			
+			// aapt resource value: 0x7f02001c
+			public const int unselectedTab = 2130837532;
 			
 			static Drawable()
 			{
