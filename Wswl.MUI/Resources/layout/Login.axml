@@ -43,6 +43,32 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout4">
+            <RadioButton
+                android:text="默认"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/rd_login_default" />
+            <RadioButton
+                android:text="黑色"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/rd_login_black" />
+            <RadioButton
+                android:text="绿色"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/rd_login_green" />
+            <RadioButton
+                android:text="粉色"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/rd_login_pink" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/linearLayout2"
             android:gravity="bottom">

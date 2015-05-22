@@ -17,6 +17,7 @@ namespace Wswl.MUI
     {
         protected override void OnCreate(Bundle bundle)
         {
+            SetTheme(WswlVariable.AppTheme);
             base.OnCreate(bundle);
 
             // Create your application here
@@ -48,6 +49,24 @@ namespace Wswl.MUI
                 intent.SetData(contentUrl);
                 StartActivity(intent);
             };
+
+            //
+            var def = FindViewById<RadioButton>(Resource.Id.rd_login_default);
+            def.Click += (s, e) => { SetAppTheme(WswlTheme.DEFAULT); };
+            var black = FindViewById<RadioButton>(Resource.Id.rd_login_black);
+            black.Click += (s, e) => { SetAppTheme(WswlTheme.BLACK); };
+            var green = FindViewById<RadioButton>(Resource.Id.rd_login_green);
+            green.Click += (s, e) => { SetAppTheme(WswlTheme.GREEN); };
+            var pink = FindViewById<RadioButton>(Resource.Id.rd_login_pink);
+            pink.Click += (s, e) => { SetAppTheme(WswlTheme.PINK); };
+        }
+
+        private void SetAppTheme(Int32 theme)
+        {
+            WswlVariable.AppTheme = theme;
+            var activity = new Intent(this, typeof(LoginActivity));
+            Finish();
+            StartActivity(activity);
         }
     }
 }

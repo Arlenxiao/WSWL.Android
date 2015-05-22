@@ -9,13 +9,12 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
-using Android.Graphics;
-using Wswl.MUI.Model;
+using Android.Content.PM;
 
 namespace Wswl.MUI
 {
-    [Activity(Label = "触摸开关")]
-    public class K0203Activity : Activity
+    [Activity(Label = "系统设置", Theme = "@style/WswlAppTheme", ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    public class SystemActivity : Activity
     {
         protected override void OnCreate(Bundle bundle)
         {
@@ -23,11 +22,7 @@ namespace Wswl.MUI
             base.OnCreate(bundle);
 
             // Create your application here
-
-            SetContentView(Resource.Layout.K0203);
-
-            //创建开关
-            this.CreateSwitch(Resources.DisplayMetrics, Resource.Id.k0203_layout_content, new SwitchK0203());
+            SetContentView(Resource.Layout.System);
         }
     }
 }

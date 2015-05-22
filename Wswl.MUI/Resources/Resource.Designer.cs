@@ -60,85 +60,91 @@ namespace Wswl.MUI
 			public const int bg_black = 2130837505;
 			
 			// aapt resource value: 0x7f020002
-			public const int deviceOffline = 2130837506;
+			public const int bg_green = 2130837506;
 			
 			// aapt resource value: 0x7f020003
-			public const int header_br = 2130837507;
+			public const int bg_pink = 2130837507;
 			
 			// aapt resource value: 0x7f020004
-			public const int home_alarm = 2130837508;
+			public const int deviceOffline = 2130837508;
 			
 			// aapt resource value: 0x7f020005
-			public const int Icon = 2130837509;
+			public const int header_br = 2130837509;
 			
 			// aapt resource value: 0x7f020006
-			public const int icon_arrow_right = 2130837510;
+			public const int home_alarm = 2130837510;
 			
 			// aapt resource value: 0x7f020007
-			public const int icon_device = 2130837511;
+			public const int Icon = 2130837511;
 			
 			// aapt resource value: 0x7f020008
-			public const int icon_device_off = 2130837512;
+			public const int icon_arrow_right = 2130837512;
 			
 			// aapt resource value: 0x7f020009
-			public const int icon_devices_white = 2130837513;
+			public const int icon_device = 2130837513;
 			
 			// aapt resource value: 0x7f02000a
-			public const int icon_gateway = 2130837514;
+			public const int icon_device_off = 2130837514;
 			
 			// aapt resource value: 0x7f02000b
-			public const int icon_home_white = 2130837515;
+			public const int icon_devices_white = 2130837515;
 			
 			// aapt resource value: 0x7f02000c
-			public const int icon_menu_white = 2130837516;
+			public const int icon_gateway = 2130837516;
 			
 			// aapt resource value: 0x7f02000d
-			public const int icon_more_white = 2130837517;
+			public const int icon_home_white = 2130837517;
 			
 			// aapt resource value: 0x7f02000e
-			public const int icon_news_white = 2130837518;
+			public const int icon_menu_white = 2130837518;
 			
 			// aapt resource value: 0x7f02000f
-			public const int icon_outline = 2130837519;
+			public const int icon_more_white = 2130837519;
 			
 			// aapt resource value: 0x7f020010
-			public const int icon_search_white = 2130837520;
+			public const int icon_news_white = 2130837520;
 			
 			// aapt resource value: 0x7f020011
-			public const int icon_setting = 2130837521;
+			public const int icon_outline = 2130837521;
 			
 			// aapt resource value: 0x7f020012
-			public const int icon_shopping = 2130837522;
+			public const int icon_search_white = 2130837522;
 			
 			// aapt resource value: 0x7f020013
-			public const int icon_un_warning = 2130837523;
+			public const int icon_setting = 2130837523;
 			
 			// aapt resource value: 0x7f020014
-			public const int icon_user = 2130837524;
+			public const int icon_shopping = 2130837524;
 			
 			// aapt resource value: 0x7f020015
-			public const int icon_warning = 2130837525;
+			public const int icon_un_warning = 2130837525;
 			
 			// aapt resource value: 0x7f020016
-			public const int image_user = 2130837526;
+			public const int icon_user = 2130837526;
 			
 			// aapt resource value: 0x7f020017
-			public const int logo = 2130837527;
+			public const int icon_warning = 2130837527;
 			
 			// aapt resource value: 0x7f020018
-			public const int selectedTab = 2130837528;
+			public const int image_user = 2130837528;
 			
 			// aapt resource value: 0x7f020019
-			public const int tab_bg = 2130837529;
+			public const int logo = 2130837529;
 			
 			// aapt resource value: 0x7f02001a
-			public const int tab_icon_home = 2130837530;
+			public const int selectedTab = 2130837530;
 			
 			// aapt resource value: 0x7f02001b
-			public const int tab_state = 2130837531;
+			public const int tab_bg = 2130837531;
 			
 			// aapt resource value: 0x7f02001c
-			public const int unselectedTab = 2130837532;
+			public const int tab_icon_home = 2130837532;
+			
+			// aapt resource value: 0x7f02001d
+			public const int tab_state = 2130837533;
+			
+			// aapt resource value: 0x7f02001e
+			public const int unselectedTab = 2130837534;
 			
 			static Drawable()
 			{
@@ -165,68 +171,68 @@ namespace Wswl.MUI
 			// aapt resource value: 0x7f04001b
 			public const int btn_home_online_user = 2130968603;
 			
-			// aapt resource value: 0x7f040030
-			public const int btn_login_link = 2130968624;
+			// aapt resource value: 0x7f040034
+			public const int btn_login_link = 2130968628;
 			
 			// aapt resource value: 0x7f04002e
 			public const int btn_login_login = 2130968622;
 			
-			// aapt resource value: 0x7f04002f
-			public const int btn_login_register = 2130968623;
+			// aapt resource value: 0x7f040033
+			public const int btn_login_register = 2130968627;
 			
-			// aapt resource value: 0x7f040051
-			public const int btn_reg_back = 2130968657;
+			// aapt resource value: 0x7f04003a
+			public const int btn_manages_system = 2130968634;
 			
-			// aapt resource value: 0x7f040050
-			public const int btn_reg_register = 2130968656;
+			// aapt resource value: 0x7f040055
+			public const int btn_reg_back = 2130968661;
 			
-			// aapt resource value: 0x7f040049
-			public const int button10_devices = 2130968649;
+			// aapt resource value: 0x7f040054
+			public const int btn_reg_register = 2130968660;
 			
-			// aapt resource value: 0x7f04004a
-			public const int button11_devices = 2130968650;
+			// aapt resource value: 0x7f04004d
+			public const int button10_devices = 2130968653;
 			
-			// aapt resource value: 0x7f040048
-			public const int button12_devices = 2130968648;
+			// aapt resource value: 0x7f04004e
+			public const int button11_devices = 2130968654;
 			
-			// aapt resource value: 0x7f04003f
-			public const int button1_devices = 2130968639;
-			
-			// aapt resource value: 0x7f040036
-			public const int button1_manages = 2130968630;
-			
-			// aapt resource value: 0x7f040040
-			public const int button2_devices = 2130968640;
-			
-			// aapt resource value: 0x7f040037
-			public const int button2_manages = 2130968631;
-			
-			// aapt resource value: 0x7f040041
-			public const int button3_devices = 2130968641;
-			
-			// aapt resource value: 0x7f040038
-			public const int button3_manages = 2130968632;
-			
-			// aapt resource value: 0x7f040042
-			public const int button4_devices = 2130968642;
-			
-			// aapt resource value: 0x7f040039
-			public const int button4_manages = 2130968633;
+			// aapt resource value: 0x7f04004c
+			public const int button12_devices = 2130968652;
 			
 			// aapt resource value: 0x7f040043
-			public const int button5_devices = 2130968643;
+			public const int button1_devices = 2130968643;
 			
 			// aapt resource value: 0x7f040044
-			public const int button6_devices = 2130968644;
+			public const int button2_devices = 2130968644;
+			
+			// aapt resource value: 0x7f04003b
+			public const int button2_manages = 2130968635;
 			
 			// aapt resource value: 0x7f040045
-			public const int button7_devices = 2130968645;
+			public const int button3_devices = 2130968645;
+			
+			// aapt resource value: 0x7f04003c
+			public const int button3_manages = 2130968636;
 			
 			// aapt resource value: 0x7f040046
-			public const int button8_devices = 2130968646;
+			public const int button4_devices = 2130968646;
+			
+			// aapt resource value: 0x7f04003d
+			public const int button4_manages = 2130968637;
 			
 			// aapt resource value: 0x7f040047
-			public const int button9_devices = 2130968647;
+			public const int button5_devices = 2130968647;
+			
+			// aapt resource value: 0x7f040048
+			public const int button6_devices = 2130968648;
+			
+			// aapt resource value: 0x7f040049
+			public const int button7_devices = 2130968649;
+			
+			// aapt resource value: 0x7f04004a
+			public const int button8_devices = 2130968650;
+			
+			// aapt resource value: 0x7f04004b
+			public const int button9_devices = 2130968651;
 			
 			// aapt resource value: 0x7f040001
 			public const int circle = 2130968577;
@@ -318,20 +324,20 @@ namespace Wswl.MUI
 			// aapt resource value: 0x7f040018
 			public const int lbl_home_warning = 2130968600;
 			
-			// aapt resource value: 0x7f040033
-			public const int lbl_manages_info = 2130968627;
+			// aapt resource value: 0x7f040037
+			public const int lbl_manages_info = 2130968631;
 			
-			// aapt resource value: 0x7f040032
-			public const int lbl_manages_title = 2130968626;
+			// aapt resource value: 0x7f040036
+			public const int lbl_manages_title = 2130968630;
 			
-			// aapt resource value: 0x7f04003c
-			public const int lbl_news_info = 2130968636;
+			// aapt resource value: 0x7f040040
+			public const int lbl_news_info = 2130968640;
 			
-			// aapt resource value: 0x7f04003b
-			public const int lbl_news_title = 2130968635;
+			// aapt resource value: 0x7f04003f
+			public const int lbl_news_title = 2130968639;
 			
-			// aapt resource value: 0x7f04004c
-			public const int lbl_reg_title = 2130968652;
+			// aapt resource value: 0x7f040050
+			public const int lbl_reg_title = 2130968656;
 			
 			// aapt resource value: 0x7f040011
 			public const int linearLayout1 = 2130968593;
@@ -348,23 +354,50 @@ namespace Wswl.MUI
 			// aapt resource value: 0x7f04001c
 			public const int linearLayout5 = 2130968604;
 			
-			// aapt resource value: 0x7f040034
-			public const int manages_image_br = 2130968628;
+			// aapt resource value: 0x7f040038
+			public const int manages_image_br = 2130968632;
+			
+			// aapt resource value: 0x7f040035
+			public const int manages_menu = 2130968629;
+			
+			// aapt resource value: 0x7f040041
+			public const int news_image_br = 2130968641;
+			
+			// aapt resource value: 0x7f04003e
+			public const int news_menu = 2130968638;
+			
+			// aapt resource value: 0x7f04005c
+			public const int radioGroup1 = 2130968668;
+			
+			// aapt resource value: 0x7f040030
+			public const int rd_login_black = 2130968624;
+			
+			// aapt resource value: 0x7f04002f
+			public const int rd_login_default = 2130968623;
 			
 			// aapt resource value: 0x7f040031
-			public const int manages_menu = 2130968625;
+			public const int rd_login_green = 2130968625;
 			
-			// aapt resource value: 0x7f04003d
-			public const int news_image_br = 2130968637;
+			// aapt resource value: 0x7f040032
+			public const int rd_login_pink = 2130968626;
 			
-			// aapt resource value: 0x7f04003a
-			public const int news_menu = 2130968634;
+			// aapt resource value: 0x7f04005f
+			public const int rd_system_black = 2130968671;
+			
+			// aapt resource value: 0x7f04005e
+			public const int rd_system_default = 2130968670;
+			
+			// aapt resource value: 0x7f040060
+			public const int rd_system_green = 2130968672;
+			
+			// aapt resource value: 0x7f040061
+			public const int rd_system_pink = 2130968673;
 			
 			// aapt resource value: 0x7f040000
 			public const int rect = 2130968576;
 			
-			// aapt resource value: 0x7f04003e
-			public const int scrollView1 = 2130968638;
+			// aapt resource value: 0x7f040042
+			public const int scrollView1 = 2130968642;
 			
 			// aapt resource value: 0x7f040008
 			public const int sv_devices = 2130968584;
@@ -378,20 +411,41 @@ namespace Wswl.MUI
 			// aapt resource value: 0x7f040029
 			public const int sv_k0221 = 2130968617;
 			
-			// aapt resource value: 0x7f040035
-			public const int sv_manages = 2130968629;
+			// aapt resource value: 0x7f040039
+			public const int sv_manages = 2130968633;
 			
-			// aapt resource value: 0x7f04004b
-			public const int sv_register = 2130968651;
+			// aapt resource value: 0x7f04004f
+			public const int sv_register = 2130968655;
 			
-			// aapt resource value: 0x7f040053
-			public const int tabIcon = 2130968659;
+			// aapt resource value: 0x7f04005a
+			public const int sv_system = 2130968666;
 			
-			// aapt resource value: 0x7f040052
-			public const int tabLayout = 2130968658;
+			// aapt resource value: 0x7f040059
+			public const int system_image_br = 2130968665;
 			
-			// aapt resource value: 0x7f040054
-			public const int tabText = 2130968660;
+			// aapt resource value: 0x7f040058
+			public const int system_info = 2130968664;
+			
+			// aapt resource value: 0x7f04005b
+			public const int system_layout_content = 2130968667;
+			
+			// aapt resource value: 0x7f040056
+			public const int system_menu = 2130968662;
+			
+			// aapt resource value: 0x7f040057
+			public const int system_title = 2130968663;
+			
+			// aapt resource value: 0x7f040063
+			public const int tabIcon = 2130968675;
+			
+			// aapt resource value: 0x7f040062
+			public const int tabLayout = 2130968674;
+			
+			// aapt resource value: 0x7f040064
+			public const int tabText = 2130968676;
+			
+			// aapt resource value: 0x7f04005d
+			public const int textView1 = 2130968669;
 			
 			// aapt resource value: 0x7f04002d
 			public const int txt_login_password = 2130968621;
@@ -399,14 +453,14 @@ namespace Wswl.MUI
 			// aapt resource value: 0x7f04002c
 			public const int txt_login_userName = 2130968620;
 			
-			// aapt resource value: 0x7f04004f
-			public const int txt_reg_confirmPassword = 2130968655;
+			// aapt resource value: 0x7f040053
+			public const int txt_reg_confirmPassword = 2130968659;
 			
-			// aapt resource value: 0x7f04004e
-			public const int txt_reg_password = 2130968654;
+			// aapt resource value: 0x7f040052
+			public const int txt_reg_password = 2130968658;
 			
-			// aapt resource value: 0x7f04004d
-			public const int txt_reg_userName = 2130968653;
+			// aapt resource value: 0x7f040051
+			public const int txt_reg_userName = 2130968657;
 			
 			static Id()
 			{
@@ -452,7 +506,10 @@ namespace Wswl.MUI
 			public const int Register = 2130903049;
 			
 			// aapt resource value: 0x7f03000a
-			public const int TabStyle = 2130903050;
+			public const int System = 2130903050;
+			
+			// aapt resource value: 0x7f03000b
+			public const int TabStyle = 2130903051;
 			
 			static Layout()
 			{
@@ -488,6 +545,15 @@ namespace Wswl.MUI
 			
 			// aapt resource value: 0x7f060000
 			public const int WswlAppTheme = 2131099648;
+			
+			// aapt resource value: 0x7f060001
+			public const int WswlAppThemeBlack = 2131099649;
+			
+			// aapt resource value: 0x7f060002
+			public const int WswlAppThemeGreen = 2131099650;
+			
+			// aapt resource value: 0x7f060003
+			public const int WswlAppThemePink = 2131099651;
 			
 			static Style()
 			{

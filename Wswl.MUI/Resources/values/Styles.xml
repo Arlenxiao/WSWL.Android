@@ -4,7 +4,16 @@
   
   <!--无声物联主题资源-->
   <style name="WswlAppTheme" parent="@android:style/Theme.NoTitleBar">
+    <item name="android:windowBackground">@drawable/bg</item>
+  </style>
+  <style name="WswlAppThemeBlack" parent="@android:style/Theme.NoTitleBar">
     <item name="android:windowBackground">@drawable/bg_black</item>
+  </style>
+  <style name="WswlAppThemeGreen" parent="@android:style/Theme.NoTitleBar">
+    <item name="android:windowBackground">@drawable/bg_green</item>
+  </style>
+  <style name="WswlAppThemePink" parent="@android:style/Theme.NoTitleBar">
+    <item name="android:windowBackground">@drawable/bg_pink</item>
   </style>
   
 </resources>

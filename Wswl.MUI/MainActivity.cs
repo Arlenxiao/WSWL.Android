@@ -5,14 +5,16 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Android.Content.PM;
 
 namespace Wswl.MUI
 {
-    [Activity(Label = "主界面")]
+    [Activity(Label = "主界面", Theme = "@style/WswlAppTheme", ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : TabActivity
     {
         protected override void OnCreate(Bundle bundle)
         {
+            SetTheme(WswlVariable.AppTheme);
             base.OnCreate(bundle);
 
             // Set our view from the "main" layout resource

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="32dp">
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/system_menu"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp" />
+        <TextView
+            android:text="系统设置"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:id="@+id/system_title"
+            android:textColor="#FFFFFF" />
+        <TextView
+            android:text=""
+            android:layout_width="40dp"
+            android:layout_height="32dp"
+            android:id="@+id/system_info"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2dp" />
+    </LinearLayout>
+    <ImageView
+        android:src="@drawable/header_br"
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:id="@+id/system_image_br" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/sv_system">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/system_layout_content"
+            android:minWidth="25px"
+            android:minHeight="25px">
+        <!--<Button
+                android:text="开关1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/btn_k0203_sw1"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:background="@drawable/deviceoffline"
+                android:drawableTop="@drawable/icon_device"
+                android:tag="0" />-->
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioGroup1"
+                android:background="@drawable/selectedtab"
+                android:padding="10dp">
+                <TextView
+                    android:text="主题设置"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView1" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="默认背景"
+                    android:id="@+id/rd_system_default" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="黑色"
+                    android:id="@+id/rd_system_black" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="绿色"
+                    android:id="@+id/rd_system_green" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="粉红"
+                    android:id="@+id/rd_system_pink" />
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

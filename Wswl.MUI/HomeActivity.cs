@@ -13,14 +13,13 @@ using Android.Util;
 using Android.Views;
 using Android.Widget;
 using Wswl.MUI.Model;
+using Android.Content.PM;
 
 namespace Wswl.MUI
 {
-    [Activity(Label = "主页")]
+    [Activity(Label = "主页", Theme = "@style/WswlAppTheme", ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class HomeActivity : Activity
     {
-
-
         public HomeActivity()
         {
             DeciveList = new List<DeviceInfo>
@@ -59,7 +58,10 @@ namespace Wswl.MUI
         private void InitEvent()
         {
             //网关菜单
-            FindViewById<ImageView>(Resource.Id.home_menu_gateway).Click += (s, e) => { Toast.MakeText(this, "网关菜单", ToastLength.Short).Show(); };
+            FindViewById<ImageView>(Resource.Id.home_menu_gateway).Click += (s, e) =>
+            {
+                Toast.MakeText(this, "网关菜单", ToastLength.Short).Show();
+            };
 
             //报警提示
             FindViewById<TextView>(Resource.Id.lbl_home_alarm).Click += (s, e) =>

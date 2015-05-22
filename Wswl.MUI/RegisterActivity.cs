@@ -17,10 +17,10 @@ namespace Wswl.MUI
     {
         protected override void OnCreate(Bundle bundle)
         {
+            SetTheme(WswlVariable.AppTheme);
             base.OnCreate(bundle);
 
             // Create your application here
-
             SetContentView(Resource.Layout.Register);
 
             //初始绑定化事件

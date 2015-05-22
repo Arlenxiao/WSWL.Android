@@ -19,6 +19,7 @@ namespace Wswl.MUI
     {
         protected override void OnCreate(Bundle bundle)
         {
+            SetTheme(WswlVariable.AppTheme);
             base.OnCreate(bundle);
 
             // Create your application here

@@ -5,6 +5,7 @@ using System.Text;
 
 using Android.App;
 using Android.Content;
+using Android.Content.PM;
 using Android.OS;
 using Android.Runtime;
 using Android.Views;
@@ -12,7 +13,7 @@ using Android.Widget;
 
 namespace Wswl.MUI
 {
-    [Activity(Label = "设置管理")]
+    [Activity(Label = "设置管理", Theme = "@style/WswlAppTheme", ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class ManagesActivity : Activity
     {
         protected override void OnCreate(Bundle bundle)
@@ -22,6 +23,14 @@ namespace Wswl.MUI
             // Create your application here
 
             SetContentView(Resource.Layout.Manages);
+
+            InitEvent();
+        }
+
+        private void InitEvent()
+        {
+            var system = FindViewById<Button>(Resource.Id.btn_manages_system);
+            system.Click += (s, e) => { StartActivity(typeof(SystemActivity)); };
         }
     }
 }
