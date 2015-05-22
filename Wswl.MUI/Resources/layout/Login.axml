@@ -15,10 +15,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/img_login_logo"
-            android:layout_marginRight="70dp"
-            android:layout_marginLeft="70dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginLeft="80dp"
             android:layout_marginTop="30dp"
-            android:layout_marginBottom="30dp" />
+            android:layout_marginBottom="20dp" />
         <EditText
             android:inputType="text"
             android:layout_width="match_parent"

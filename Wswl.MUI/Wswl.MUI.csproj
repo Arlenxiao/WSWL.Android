@@ -86,6 +86,7 @@
     <Compile Include="DevicesActivity.cs" />
     <Compile Include="HomeActivity.cs" />
     <Compile Include="K0203Activity.cs" />
+    <Compile Include="K0221Activity.cs" />
     <Compile Include="LoginActivity.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="ManagesActivity.cs" />
@@ -129,6 +130,9 @@
       <SubType>AndroidResource</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\K0203.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\K0221.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
   </ItemGroup>

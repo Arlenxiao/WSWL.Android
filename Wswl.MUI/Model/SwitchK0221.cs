@@ -29,7 +29,7 @@ namespace Wswl.MUI.Model
             Count = 1;
             Positions=new List<SwitchPosition>
             {
-                new SwitchPosition{Name = "一号位",IconOff = Resource.Drawable.icon_device_off,IconOn = Resource.Drawable.icon_device},
+                new SwitchPosition{Name = "开关",IconOff = Resource.Drawable.icon_device_off,IconOn = Resource.Drawable.icon_device},
             };
         }
     }

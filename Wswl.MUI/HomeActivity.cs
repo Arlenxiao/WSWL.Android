@@ -52,7 +52,7 @@ namespace Wswl.MUI
             InitEvent();
 
             //构建常用设备
-            CreateDevice();
+            this.CreateDevice(Resources.DisplayMetrics, Resource.Id.layout_home_devices, DeciveList, false);
         }
 
         /// <summary>初始化事件</summary>
@@ -107,70 +107,6 @@ namespace Wswl.MUI
             //茶室门窗磁
             FindViewById<Button>(Resource.Id.btn_home_dev_A0501_01).Click += (s, e) => { Toast.MakeText(this, "茶室门窗磁,暂时还没有做具体界面,等待做好跳转对应控制界面!", ToastLength.Short).Show(); };
             */
-        }
-
-        /// <summary>构建常用设备</summary>
-        private void CreateDevice()
-        {
-            var width = Convert.ToInt32(110 * Resources.DisplayMetrics.Xdpi / 160);
-            var height = Convert.ToInt32(80 * Resources.DisplayMetrics.Ydpi / 160);
-            var num = Convert.ToInt32(Resources.DisplayMetrics.WidthPixels / width);
-            var rows = DeciveList.Count / num + ((DeciveList.Count % num == 0) ? 0 : 1);
-
-            var layout = FindViewById<LinearLayout>(Resource.Id.layout_home_devices);
-            for (var i = 0; i < rows; i++)
-            {
-                var linearLayout = new LinearLayout(this);
-                var btnParams = new LinearLayout.LayoutParams(width, height);
-#if DEBUG
-                var str = string.Format("Xdpi:{0} px:{1} {2} {3}", Resources.DisplayMetrics.Xdpi, Resources.DisplayMetrics.WidthPixels, width, height);
-#endif
-                var n = i * num;
-                var g = DeciveList.Count - n;
-                var count = g > num ? num : g;
-                for (var j = 0; j < count; j++)
-                {
-                    var device = DeciveList[n + j];
-                    var btn = new Button(this) { Text = device.Name, LayoutParameters = btnParams, Tag = (int)device.Type };
-                    btnParams.SetMargins(5, 5, 5, 5);
-                    btn.SetBackgroundResource(device.IsFind ? Resource.Drawable.selectedTab : Resource.Drawable.deviceOffline);
-                    btn.SetTextColor(Color.White);
-                    btn.SetPadding(0, 12, 0, 12);
-                    //btn.SetCompoundDrawablesWithIntrinsicBounds(i == 0 ? Resource.Drawable.icon_gateway : 0, 0, i == 1 ? Resource.Drawable.icon_gateway : 0, 0);
-                    btn.SetCompoundDrawablesWithIntrinsicBounds(0, device.Icon, 0, 0);
-                    btn.Click += (s, e) =>
-                    {
-                        var sender = s as Button;
-                        if (sender == null) return;
-                        var type = Convert.ToInt32(sender.Tag);
-                        StartActivity(BaseHelper.GetActivityType(type));
-                    };
-                    linearLayout.AddView(btn);
-                }
-                layout.AddView(linearLayout);
-            }
-#if DEBUG
-            var linearLayout_debug = new LinearLayout(this);
-            var btnParams_debug = new LinearLayout.LayoutParams(width, height);
-            var str_debug = string.Format("Xdpi:{0} px:{1} {2} {3}", Resources.DisplayMetrics.Xdpi, Resources.DisplayMetrics.WidthPixels, width, height);
-
-            for (var j = 0; j < num; j++)
-            {
-                var btn = new Button(this) { Text = "动态设备" + j, LayoutParameters = btnParams_debug, };
-                btnParams_debug.SetMargins(5, 5, 5, 5);
-                btn.SetBackgroundResource(Resource.Drawable.selectedTab);
-                btn.SetTextColor(Color.White);
-                btn.SetPadding(0, 12, 0, 12);
-                btn.SetCompoundDrawablesWithIntrinsicBounds(j % 2 == 0 ? Resource.Drawable.icon_gateway : 0, 0, j == 1 ? Resource.Drawable.icon_gateway : 0, 0);
-                btn.Click += (s, e) =>
-                {
-                    var sender = s as Button;
-                    Toast.MakeText(this, str_debug + "  " + sender.Text, ToastLength.Short).Show();
-                };
-                linearLayout_debug.AddView(btn);
-            }
-            layout.AddView(linearLayout_debug);
-#endif
         }
     }
 

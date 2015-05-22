@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:slideswitch="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
@@ -11,22 +10,22 @@
         <ImageView
             android:layout_width="32dp"
             android:layout_height="32dp"
-            android:id="@+id/k0203_menu"
+            android:id="@+id/k0221_menu"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="2dp" />
         <TextView
-            android:text="触摸开关"
+            android:text="智能继电器"
             android:gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
             android:layout_weight="1"
-            android:id="@+id/k0203_title"
+            android:id="@+id/k0221_title"
             android:textColor="#FFFFFF" />
         <TextView
-            android:text="3位"
+            android:text="1位"
             android:layout_width="40dp"
             android:layout_height="32dp"
-            android:id="@+id/k0203_info"
+            android:id="@+id/k0221_info"
             android:gravity="center"
             android:textColor="#FFFFFF"
             android:layout_marginLeft="5dp"
@@ -37,21 +36,21 @@
         android:src="@drawable/header_br"
         android:layout_width="fill_parent"
         android:layout_height="10dp"
-        android:id="@+id/k0203_image_br" />
+        android:id="@+id/k0221_image_br" />
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/sv_k0203">
+        android:id="@+id/sv_k0221">
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/k0203_layout_content">
+            android:id="@+id/k0221_layout_content">
         <!--<Button
                 android:text="开关1"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:id="@+id/btn_k0203_sw1"
+                android:id="@+id/btn_k0221_sw1"
                 android:layout_gravity="center"
                 android:padding="10dp"
                 android:background="@drawable/deviceoffline"

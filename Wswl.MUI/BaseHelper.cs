@@ -15,9 +15,9 @@ namespace Wswl.MUI
 
             switch (type)
             {
+                case (int)DeviceType.K0221: return typeof(K0221Activity);
                 case (int)DeviceType.W0103:
                 case (int)DeviceType.K0203:
-                case (int)DeviceType.K0221:
                 case (int)DeviceType.G0311:
                 case (int)DeviceType.J0411:
                 case (int)DeviceType.A0501:
