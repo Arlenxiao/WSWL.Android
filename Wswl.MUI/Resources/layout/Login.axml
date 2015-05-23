@@ -22,49 +22,70 @@
         <EditText
             android:inputType="text"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:id="@+id/txt_login_userName"
             android:hint="登录账号"
             android:layout_marginBottom="10dp"
             android:padding="5dp"
-            android:textSize="20dp" />
+            android:background="@drawable/button_style"
+            android:layout_margin="3dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textSize="14dp" />
         <EditText
             android:inputType="textPassword"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:id="@+id/txt_login_password"
             android:hint="密码"
-            android:layout_marginBottom="10dp" />
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_style"
+            android:layout_margin="3dp"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
+            android:textSize="14dp"
+            android:padding="5dp" />
         <Button
             android:text="登  录"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/btn_login_login" />
+            android:layout_height="40dp"
+            android:id="@+id/btn_login_login"
+            android:background="@drawable/button_style"
+            android:layout_margin="3dp"
+            android:textColor="#FFFFFF"
+            android:textSize="14dp" />
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/linearLayout4">
-            <RadioButton
-                android:text="默认"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:id="@+id/rd_login_default" />
-            <RadioButton
-                android:text="黑色"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:id="@+id/rd_login_black" />
-            <RadioButton
-                android:text="绿色"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:id="@+id/rd_login_green" />
-            <RadioButton
-                android:text="粉色"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:id="@+id/rd_login_pink" />
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioGroup1"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:text="默认"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rd_login_default"
+                    android:checked="true" />
+                <RadioButton
+                    android:text="黑色"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rd_login_black" />
+                <RadioButton
+                    android:text="绿色"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rd_login_green" />
+                <RadioButton
+                    android:text="粉色"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rd_login_pink" />
+            </RadioGroup>
         </LinearLayout>
         <LinearLayout
             android:orientation="horizontal"

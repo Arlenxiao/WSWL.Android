@@ -15,12 +15,12 @@ namespace Wswl.MUI
     public class WswlTheme
     {
         /// <summary>默认主题</summary>
-        public static Int32 DEFAULT = Resource.Style.WswlAppTheme;
+        public const Int32 DEFAULT = Resource.Style.WswlAppTheme;
         /// <summary>黑色</summary>
-        public static Int32 BLACK = Resource.Style.WswlAppThemeBlack;
+        public const Int32 BLACK = Resource.Style.WswlAppThemeBlack;
         /// <summary>绿色</summary>
-        public static Int32 GREEN = Resource.Style.WswlAppThemeGreen;
+        public const Int32 GREEN = Resource.Style.WswlAppThemeGreen;
         /// <summary>粉色</summary>
-        public static Int32 PINK = Resource.Style.WswlAppThemePink;
+        public const Int32 PINK = Resource.Style.WswlAppThemePink;
     }
 }

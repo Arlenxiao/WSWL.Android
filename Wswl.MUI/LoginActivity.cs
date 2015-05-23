@@ -26,6 +26,8 @@ namespace Wswl.MUI
 
             //初始化加载
             InitEvent();
+
+            CheckedRadioButton();
         }
 
         /// <summary>初始化按钮事件</summary>
@@ -67,6 +69,35 @@ namespace Wswl.MUI
             var activity = new Intent(this, typeof(LoginActivity));
             Finish();
             StartActivity(activity);
+        }
+
+        private void CheckedRadioButton()
+        {
+            switch (WswlVariable.AppTheme)
+            {
+                case WswlTheme.DEFAULT: { 
+                    var def = FindViewById<RadioButton>(Resource.Id.rd_login_default);
+                    def.Checked = true;
+                    break; }
+                case WswlTheme.BLACK:
+                {
+                    var black = FindViewById<RadioButton>(Resource.Id.rd_login_black);
+                    black.Checked = true;
+                    break;
+                }
+                case WswlTheme.GREEN:
+                {
+                    var green = FindViewById<RadioButton>(Resource.Id.rd_login_green);
+                    green.Checked = true;
+                    break;
+                }
+                case WswlTheme.PINK:
+                {
+                    var pink = FindViewById<RadioButton>(Resource.Id.rd_login_pink);
+                    pink.Checked = true;
+                    break;
+                }
+            }
         }
     }
 }
