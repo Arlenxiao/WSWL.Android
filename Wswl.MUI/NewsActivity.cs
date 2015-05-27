@@ -16,7 +16,6 @@ namespace Wswl.MUI
     [Activity(Label = "пео╒")]
     public class NewsActivity : Activity
     {
-
         public NewsActivity()
         {
             ListMessages=new List<MessageInfo>();
