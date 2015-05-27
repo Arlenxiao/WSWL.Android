@@ -37,11 +37,13 @@
         android:layout_width="fill_parent"
         android:layout_height="10dp"
         android:id="@+id/news_image_br" />
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/scrollView1">
-        <LinearLayout
+<!--<ScrollView
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:id="@+id/scrollView1"
+      android:minWidth="25px"
+      android:minHeight="25px"> 
+      <LinearLayout
             android:orientation="vertical"
             android:minWidth="25px"
             android:minHeight="25px"
@@ -217,5 +219,12 @@
                 android:drawableRight="@drawable/icon_more_white"
                 android:drawablePadding="5dp" />
         </LinearLayout>
-    </ScrollView>
+      </ScrollView>
+         -->
+    <ListView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/lv_news_messages" />
 </LinearLayout>

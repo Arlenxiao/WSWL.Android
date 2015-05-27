@@ -90,9 +90,11 @@
     <Compile Include="LoginActivity.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="ManagesActivity.cs" />
+    <Compile Include="MessageAdapter.cs" />
     <Compile Include="Model\DeviceInfo.cs" />
     <Compile Include="Model\DeviceType.cs" />
     <Compile Include="Model\ISwitch.cs" />
+    <Compile Include="Model\MesssageInfo.cs" />
     <Compile Include="Model\SwitchK0203.cs" />
     <Compile Include="Model\SwitchK0221.cs" />
     <Compile Include="Model\SwitchPosition.cs" />
@@ -139,6 +141,9 @@
       <SubType>AndroidResource</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\System.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\MessageView.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
   </ItemGroup>
