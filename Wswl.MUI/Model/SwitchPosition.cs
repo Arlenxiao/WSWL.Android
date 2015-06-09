@@ -15,7 +15,8 @@ namespace Wswl.MUI.Model
     /// <summary>
     /// 开关位
     /// </summary>
-    public class SwitchPosition
+    [Serializable]
+    public class SwitchPosition : Java.Lang.Object
     {
         /// <summary>开关位名称</summary>
         public String Name { get; set; }

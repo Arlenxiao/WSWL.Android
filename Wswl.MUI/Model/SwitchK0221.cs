@@ -12,7 +12,7 @@ using Android.Widget;
 
 namespace Wswl.MUI.Model
 {
-    public class SwitchK0221:ISwitch
+    public class SwitchK0221 : Java.Lang.Object, ISwitch
     {
         public string Name { get; set; }
 

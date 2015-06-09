@@ -15,7 +15,7 @@ namespace Wswl.MUI.Model
     /// <summary>
     /// 开关接口
     /// </summary>
-    public interface ISwitch
+    public interface ISwitch 
     {
         /// <summary>开关名称</summary>
         String Name { get; set; }

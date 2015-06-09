@@ -12,7 +12,8 @@ using Android.Widget;
 
 namespace Wswl.MUI.Model
 {
-    public class SwitchK0203 : ISwitch
+    [Serializable]
+    public class SwitchK0203 :Java.Lang.Object, ISwitch
     {
         public string Name { get; set; }
 
@@ -27,7 +28,7 @@ namespace Wswl.MUI.Model
             Name = "K0203";
             Type = DeviceType.K0203;
             Count = 3;
-            Positions=new List<SwitchPosition>
+            Positions = new List<SwitchPosition>
             {
                 new SwitchPosition{Name = "一号开关",IconOff = Resource.Drawable.icon_device_off,IconOn = Resource.Drawable.icon_device,State = 0},
                 new SwitchPosition{Name = "二号开关",IconOff = Resource.Drawable.icon_device_off,IconOn = Resource.Drawable.icon_device,State = 0},

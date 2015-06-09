@@ -22,7 +22,7 @@ namespace Wswl.MUI
         /// <param name="act"></param>
         /// <param name="msg">要显示的提示消息</param>
         /// <param name="img">图标</param>
-        public static void ShowMessage(this Activity act, string msg = "",int img = Resource.Drawable.logo)
+        public static void ShowMessage(this Activity act, string msg = "", int img = Resource.Drawable.logo)
         {
             var view = act.LayoutInflater.Inflate(Resource.Layout.app_message, null);//获取Activity里的View
             view.FindViewById<ImageView>(Resource.Id.app_message_image).SetImageResource(img);
@@ -43,7 +43,7 @@ namespace Wswl.MUI
             var height = Convert.ToInt32(80 * metrics.Ydpi / 160);
             var num = Convert.ToInt32(metrics.WidthPixels / width);
             var rows = sw.Count / num + ((sw.Count % num == 0) ? 0 : 1);
-            
+
             var layout = act.FindViewById<LinearLayout>(layoutId);
 
             for (var i = 0; i < rows; i++)
@@ -56,7 +56,8 @@ namespace Wswl.MUI
                 for (var j = 0; j < count; j++)
                 {
                     var pos = sw.Positions[n + j];
-                    var btn = new Button(act) { Text = pos.Name, LayoutParameters = btnParams, Tag = pos.State };
+                    //Tag改用记录对象实体对象实体需要继承Java.Lang.Object
+                    var btn = new Button(act) { Text = pos.Name, LayoutParameters = btnParams, Tag = pos };
                     btnParams.SetMargins(10, 10, 10, 10);
                     btn.SetBackgroundResource(pos.State == 0 ? Resource.Drawable.deviceOffline : Resource.Drawable.selectedTab);
                     btn.SetTextColor(Color.Gray);
@@ -69,12 +70,16 @@ namespace Wswl.MUI
 
                         Toast.MakeText(act, "点击事件:" + sender.Text, ToastLength.Short).Show();
 
-                        var t = sender.Tag;
-                        var state = Convert.ToInt32(t ?? 0);//0:关 1:开
-                        sender.SetBackgroundResource(state == 0 ? Resource.Drawable.selectedTab : Resource.Drawable.deviceOffline);
-                        sender.SetTextColor(state == 0 ? Color.White : Color.Gray);
-                        sender.SetCompoundDrawablesWithIntrinsicBounds(0, state == 0 ? Resource.Drawable.icon_device : Resource.Drawable.icon_devices_white, 0, 0);
-                        sender.Tag = state == 0 ? 1 : 0;
+                        var t = sender.Tag as SwitchPosition;
+                        if (t != null)
+                        {
+                            var state = t.State;//0:关 1:开
+                            sender.SetBackgroundResource(state == 0 ? Resource.Drawable.selectedTab : Resource.Drawable.deviceOffline);
+                            sender.SetTextColor(state == 0 ? Color.White : Color.Gray);
+                            sender.SetCompoundDrawablesWithIntrinsicBounds(0, state == 0 ? Resource.Drawable.icon_device : Resource.Drawable.icon_devices_white, 0, 0);
+                            t.State = t.State == 0 ? 1 : 0;
+                            sender.Tag = t;
+                        }
                     };
                     linearLayout.AddView(btn);
                 }
@@ -96,7 +101,7 @@ namespace Wswl.MUI
             var rows = list.Count / num + ((list.Count % num == 0) ? 0 : 1);
 
             var isok = false;
-            if (isdevices) isok=list.Count % num == 0;//是否刚好一行
+            if (isdevices) isok = list.Count % num == 0;//是否刚好一行
 
             var layout = act.FindViewById<LinearLayout>(layoutId);
             for (var i = 0; i < rows; i++)
@@ -141,7 +146,7 @@ namespace Wswl.MUI
                 }
                 layout.AddView(linearLayout);
             }
-            if(!isdevices) return;
+            if (!isdevices) return;
             if (isok)
             {
                 var linearLayout = new LinearLayout(act);
