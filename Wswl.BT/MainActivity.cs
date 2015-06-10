@@ -9,7 +9,7 @@ using Android.OS;
 
 namespace Wswl.BT
 {
-    [Activity(Label = "无声物联BT", MainLauncher = true, Icon = "@drawable/icon")]
+   
 	public class MainActivity : Activity
 	{
 		#region 属性
@@ -19,7 +19,7 @@ namespace Wswl.BT
 		private static ArrayAdapter<String> pairedDevicesArrayAdapter;  //配对设备
 		private static ArrayAdapter<String> newDevicesArrayAdapter;     //新发现设备
 
-		private Receiver receiver;
+		//private Receiver receiver;
 		#endregion
 
 		protected override void OnCreate(Bundle bundle)
@@ -27,13 +27,14 @@ namespace Wswl.BT
 			base.OnCreate(bundle);
 
 			// Set our view from the "main" layout resource
-			SetContentView(Resource.Layout.Main);
+			//SetContentView(Resource.Layout.Main);
 
-			InitPage();
+			//InitPage();
 		}
 
 		private void InitPage()
 		{
+            /*
 			btAdapter = BluetoothAdapter.DefaultAdapter;
 			if (btAdapter == null)
 			{
@@ -77,17 +78,17 @@ namespace Wswl.BT
             {
                 pairedDevicesArrayAdapter.Add("没有配对设备");
             }
-			
+			*/
 		}
 
 		protected override void OnStart()
 		{
-			base.OnStart();
-			if (!btAdapter.IsEnabled)
-			{
-				Intent enableIntent = new Intent(BluetoothAdapter.ActionRequestEnable);
-				StartActivityForResult(enableIntent, 2);
-			}
+            //base.OnStart();
+            //if (!btAdapter.IsEnabled)
+            //{
+            //    Intent enableIntent = new Intent(BluetoothAdapter.ActionRequestEnable);
+            //    StartActivityForResult(enableIntent, 2);
+            //}
 		}
 
 		void DeviceListClick(object sender, AdapterView.ItemClickEventArgs e)
@@ -118,6 +119,7 @@ namespace Wswl.BT
             btAdapter.StartDiscovery();
         }
 
+        /*
         public class Receiver : BroadcastReceiver
         {
             Activity _chat;
@@ -154,6 +156,7 @@ namespace Wswl.BT
                 }
             }
         }
+         */
 	}
 }
 

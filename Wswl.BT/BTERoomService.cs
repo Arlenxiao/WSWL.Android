@@ -19,7 +19,7 @@ using System.Runtime.CompilerServices;
 
 namespace Wswl.BT
 {
-    /// <summary>蓝牙房间服务</summary>
+    /// <summary>蓝牙服务</summary>
     public class BTERoomService
     {
         private const string TAG = "BTERoomService";
@@ -502,6 +502,19 @@ namespace Wswl.BT
 
         /// <summary></summary>
         TOAST = 5,
+
+    }
+
+    /// <summary>
+    /// 请求枚举
+    /// </summary>
+    public enum RequestEnum
+    {
+        /// <summary>连接设备</summary>
+        CONNECT_DEVICE = 1,
+
+        /// <summary>启用蓝牙</summary>
+        ENABLE_BT = 2,
 
     }
 }

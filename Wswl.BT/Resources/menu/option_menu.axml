@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:id="@+id/scan"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="连接到装置" />
+  <item android:id="@+id/discoverable"
+        android:icon="@android:drawable/ic_menu_mylocation"
+        android:title="设置可发现设备" />
+</menu>

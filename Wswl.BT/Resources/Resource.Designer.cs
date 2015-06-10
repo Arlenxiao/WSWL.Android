@@ -60,20 +60,38 @@ namespace Wswl.BT
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050000
-			public const int button_scan = 2131034112;
+			// aapt resource value: 0x7f060008
+			public const int button_scan = 2131099656;
 			
-			// aapt resource value: 0x7f050004
-			public const int new_devices = 2131034116;
+			// aapt resource value: 0x7f060003
+			public const int button_send = 2131099651;
 			
-			// aapt resource value: 0x7f050002
-			public const int paired_devices = 2131034114;
+			// aapt resource value: 0x7f06000a
+			public const int discoverable = 2131099658;
 			
-			// aapt resource value: 0x7f050003
-			public const int title_new_devices = 2131034115;
+			// aapt resource value: 0x7f060002
+			public const int edit_text_out = 2131099650;
 			
-			// aapt resource value: 0x7f050001
-			public const int title_paired_devices = 2131034113;
+			// aapt resource value: 0x7f060001
+			public const int lv_in = 2131099649;
+			
+			// aapt resource value: 0x7f060007
+			public const int new_devices = 2131099655;
+			
+			// aapt resource value: 0x7f060005
+			public const int paired_devices = 2131099653;
+			
+			// aapt resource value: 0x7f060009
+			public const int scan = 2131099657;
+			
+			// aapt resource value: 0x7f060000
+			public const int textView1 = 2131099648;
+			
+			// aapt resource value: 0x7f060006
+			public const int title_new_devices = 2131099654;
+			
+			// aapt resource value: 0x7f060004
+			public const int title_paired_devices = 2131099652;
 			
 			static Id()
 			{
@@ -89,10 +107,19 @@ namespace Wswl.BT
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int device_name = 2130903040;
+			public const int BTERoom = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int Main = 2130903041;
+			public const int device_list = 2130903041;
+			
+			// aapt resource value: 0x7f030002
+			public const int device_name = 2130903042;
+			
+			// aapt resource value: 0x7f030003
+			public const int Main = 2130903043;
+			
+			// aapt resource value: 0x7f030004
+			public const int message = 2130903044;
 			
 			static Layout()
 			{
@@ -100,6 +127,22 @@ namespace Wswl.BT
 			}
 			
 			private Layout()
+			{
+			}
+		}
+		
+		public partial class Menu
+		{
+			
+			// aapt resource value: 0x7f050000
+			public const int option_menu = 2131034112;
+			
+			static Menu()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Menu()
 			{
 			}
 		}
